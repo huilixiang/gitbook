@@ -4,7 +4,7 @@
 "author": "huajie",
 "output.name": "site",
 "language": "zh-hans",
-"gitbook": "2.3.2,
+"gitbook": "2.3.2",
 "root": ".",
 "structure": {
 "readme": "introduction.md"
