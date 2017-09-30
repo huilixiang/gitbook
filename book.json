@@ -10,7 +10,8 @@
 "readme": "README.md"
 },
 "plugins": [
-"katex"
+"katex",
+"-mathjax"
 ],
 "pluginsConfig": {
 "theme-default": {
