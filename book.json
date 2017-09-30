@@ -1,0 +1,81 @@
+{
+"title": "工作笔记",
+"description": "记录工作内容及学习笔记",
+"author": "huajie",
+"output.name": "site",
+"language": "zh-hans",
+"gitbook": "2.3.2,
+"root": ".",
+"structure": {
+"readme": "introduction.md"
+},
+"plugins": [
+"katex"
+],
+"pluginsConfig": {
+"theme-default": {
+"showLevel": true
+},
+"disqus": {
+"shortName": "gitbookuse"
+},
+"prism": {
+"css": [
+"prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+]
+},
+"github": {
+"url": "https://github.com/huilixiang/gitbook"
+},
+"github-buttons": {
+"repo": "huilixiang/gitbook",
+"types": [
+"star"
+],
+"size": "small"
+},
+"include-codeblock": {
+"template": "ace",
+"unindent": true,
+"edit": true
+},
+"sharing": {
+"weibo": true,
+"facebook": true,
+"twitter": true,
+"google": false,
+"instapaper": false,
+"vk": false,
+"all": [
+"facebook",
+ "google",
+"twitter",
+"weibo",
+"instapaper"
+]
+},
+"simple-page-toc": {
+"maxDepth": 3,
+"skipFirstH1": true
+},
+"edit-link": {
+"base": "https://github.com/huilixiang/gitbook/edit/master",
+"label": "Edit This Page"
+},
+"anchor-navigation-ex": {
+"isRewritePageTitle": false,
+"tocLevel1Icon": "fa fa-hand-o-right",
+"tocLevel2Icon": "fa fa-hand-o-right",
+"tocLevel3Icon": "fa fa-hand-o-right"
+},
+"sectionx": {
+"tag": "b"
+},
+"favicon": {
+"shortcut": "favicon.ico",
+"bookmark": "favicon.ico"
+}
+}
+}
+
+
