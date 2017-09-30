@@ -5,4 +5,5 @@
     * [第一节](SI/section1.md)
 * [机器学习与模型识别](PRML/README.md)
 * [machine learning yearning](MLYearning/README.md)
+    * [笔记](MLYearning/notes.md)
 
