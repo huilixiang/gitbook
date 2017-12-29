@@ -105,6 +105,8 @@ explaining away指的是这样一种情况：对于一个多因一果的问题�
 
   #### $$ p(v,h) \propto  e^{-E(v,h)}  $$
 
+- 
+
 
 
 
