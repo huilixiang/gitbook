@@ -9,4 +9,5 @@
 * [ML拾遗](LML/README.md)
   * [抽样分布](LML/sample_dist.md)
   * [deep sparse rectifier neural networks](LML/deep-sparse-rectifier-neural-networks.md)
+  * [deep belief nets](LML/deep-belief-networks.md)
 
