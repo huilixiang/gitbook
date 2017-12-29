@@ -93,6 +93,7 @@ explaining away指的是这样一种情况：对于一个多因一果的问题�
     - 当给定一个数据向量时， 我们可以很容易的从后验分布中得到一个无偏样本
     - 这是有向信念网络的巨大优势
 
+#### The Energy of a joint configuration
 
 
 
