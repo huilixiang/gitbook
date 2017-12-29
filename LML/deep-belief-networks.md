@@ -95,8 +95,14 @@ explaining away指的是这样一种情况：对于一个多因一果的问题�
 
 #### The Energy of a joint configuration
 
+![](/assets/energy-join-configuration.png)
 
+#### Weights  Energies  Probabilities
+- 每个可视节点与隐层节点之间的可能存在的连接有能量。
 
+    能量有权重和偏置决定
+- 能量决定概率
+- 
 
 
 
