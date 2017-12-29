@@ -106,7 +106,9 @@ explaining away指的是这样一种情况：对于一个多因一果的问题�
   #### $$ p(v,h) \propto  e^{-E(v,h)}  $$
 
 - 关于可视节点的配置的概率等于所有 joint configurations 的概率之和
-- 
+
+#### 使用能量来定义概率
+
 
 
 
