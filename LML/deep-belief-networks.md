@@ -41,4 +41,5 @@ vapnik和他的同事们发明了一个聪明的感知机：SVM
 - 保留通过梯度来调整特征权重的方法， 但拿它来对sensory input建模   
 
     调整生成模型的权重，使得当前sensory input的概率最大
-- 
+    学习P(image) not P(label|image)
+- 选择哪种类型的生成模型呢？
