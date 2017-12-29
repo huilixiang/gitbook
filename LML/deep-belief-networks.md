@@ -74,7 +74,8 @@ binary states of its parents
     
 -
 
-####  
+####  为什么每次学习sigmoid belief nets的一层是困难的
+
 
 
 
