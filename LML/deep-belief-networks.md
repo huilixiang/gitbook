@@ -51,8 +51,9 @@ vapnik和他的同事们发明了一个聪明的感知机：SVM
    
 - 我们使用stochastic binary variables构建的层 和 层之间加权的连接来构建网络。稍后我们会推广到其它类型的变量
 
-#### 
-
+#### stochastic binary units (伯努利变量)
+- 只有0 / 1 状态
+- 该单元被激活的概率由其它输入单元的权重决定（可以有bias）
 
 
 
