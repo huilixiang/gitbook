@@ -35,7 +35,12 @@ Y是定性变量-->分类， 常用逻辑回归
 - 极大似然  
   给定x,w时，$$ y \subseteq{\{0,1\}} $$  
       
-  $$p(Y|X,W)$$ 服从Bernoulli distribution
+  $$p(Y|X,W)$$ ~ Bernoulli distribution
+  
+  假设所有的Y独立同分布， 则联合概率密度：
+  #### $$\prod p^y \cdot (1-p)^{1 - y}$$
+  
+  
 
 
  
