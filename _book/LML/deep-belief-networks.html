@@ -1,0 +1,532 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>deep belief nets · 工作笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="huajie">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="deep-sparse-rectifier-neural-networks.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SI/">
+            
+                <a href="../SI/">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    统计推断
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../SI/section1.html">
+            
+                <a href="../SI/section1.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    第一节
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../PRML/">
+            
+                <a href="../PRML/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    机器学习与模型识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../MLYearning/">
+            
+                <a href="../MLYearning/">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    machine learning yearning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../MLYearning/notes.html">
+            
+                <a href="../MLYearning/notes.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    ML拾遗
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="sample_dist.html">
+            
+                <a href="sample_dist.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    抽样分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="deep-sparse-rectifier-neural-networks.html">
+            
+                <a href="deep-sparse-rectifier-neural-networks.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    deep sparse rectifier neural networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="deep-belief-networks.html">
+            
+                <a href="deep-belief-networks.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    deep belief nets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >deep belief nets</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5C06;&#x8981;&#x5B66;&#x4E60;&#x7684;&#x5185;&#x5BB9;">&#x5C06;&#x8981;&#x5B66;&#x4E60;&#x7684;&#x5185;&#x5BB9;</h2>
+<ul>
+<li><p>&#x5728;&#x6BCF;&#x6B21;&#x53EA;&#x5B66;&#x4E60;&#x4E00;&#x5C42;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x600E;&#x4E48;&#x4ECE;&#x65E0;label&#x6570;&#x636E;&#x4E2D;&#x5B66;&#x4E60;&#x591A;&#x5C42;&#x751F;&#x6210;&#x6A21;&#x578B;   </p>
+<p>  &#x600E;&#x6837;&#x5728;&#x6BCF;&#x4E2A;&#x9690;&#x5C42;&#x4E2D;&#x6DFB;&#x52A0;markov&#x968F;&#x673A;&#x573A;  </p>
+</li>
+<li><p>&#x600E;&#x6837;&#x4F7F;&#x7528;&#x751F;&#x6210;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x8BAD;&#x7EC3;&#xFF0C;&#x4F7F;&#x5F97;&#x6548;&#x679C;&#x6BD4;&#x5206;&#x7C7B;&#x548C;&#x56DE;&#x5F52;&#x8981;&#x597D;  </p>
+<p>  Gaussian Processes</p>
+</li>
+<li><p>&#x600E;&#x6837;&#x5728;&#x5927;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x8FDB;&#x884C;&#x975E;&#x7EBF;&#x6027;&#x964D;&#x7EF4;</p>
+</li>
+<li><p>&#x600E;&#x6837;&#x5728;&#x9AD8;&#x7EF4;&#x5E8F;&#x5217;&#x6570;&#x636E;&#x4E0A;&#x5B66;&#x4E60;&#x591A;&#x5C42;&#x751F;&#x6210;&#x6A21;&#x578B;</p>
+</li>
+</ul>
+<h2 id="&#x673A;&#x5668;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x7CFB;&#x5217;">&#x673A;&#x5668;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x7CFB;&#x5217;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7ECF;&#x5178;&#x7EDF;&#x8BA1;&#x5B66;</th>
+<th>AI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x4F4E;&#x7EF4; &#x7EF4;&#x5EA6; &lt; 100</td>
+<td>&#x9AD8;&#x7EF4;</td>
+</tr>
+<tr>
+<td>&#x6570;&#x636E;&#x4E2D;&#x6709;&#x5927;&#x91CF;&#x7684;&#x566A;&#x58F0;</td>
+<td>&#x566A;&#x58F0;&#x4E0D;&#x8DB3;&#x4EE5;&#x5F71;&#x54CD;&#x6570;&#x636E;&#x7684;&#x5185;&#x5728;&#x7ED3;&#x6784;&#xFF08;&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x6070;&#x5F53;&#x7684;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x65F6;&#xFF09;</td>
+</tr>
+<tr>
+<td>&#x6570;&#x636E;&#x7684;&#x5185;&#x5728;&#x7ED3;&#x6784;&#x4E0D;&#x590D;&#x6742;&#xFF0C;&#x7528;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x7B80;&#x5355;&#x7684;&#x6A21;&#x578B;&#x5C31;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x5B83;</td>
+<td>&#x6570;&#x636E;&#x6709;&#x590D;&#x6742;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4E0D;&#x53EF;&#x80FD;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6A21;&#x578B;&#x6765;&#x8868;&#x793A;&#x5B83;</td>
+</tr>
+<tr>
+<td>&#x4E3B;&#x8981;&#x4EFB;&#x52A1;&#x662F;&#x533A;&#x5206;&#x566A;&#x58F0;</td>
+<td>&#x4E3B;&#x8981;&#x662F;&#x4EFB;&#x52A1;&#x662F;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x53EF;&#x5B66;&#x4E60;&#x7684;&#x3001;&#x80FD;&#x591F;&#x8868;&#x5F81;&#x6570;&#x636E;&#x590D;&#x6742;&#x7ED3;&#x6784;&#x7684;&#x65B9;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x65F6;&#x4EE3;&#x80CC;&#x666F;">&#x65F6;&#x4EE3;&#x80CC;&#x666F;</h2>
+<h3 id="&#x7B2C;&#x4E00;&#x4EE3;nn--1960">&#x7B2C;&#x4E00;&#x4EE3;nn ( ~1960)</h3>
+<p>perceptrons ,&#x611F;&#x77E5;&#x673A;&#xFF0C; 1960&#x5E74;&#x4EE5;&#x524D;&#x3002; &#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x624B;&#x5DE5;&#x7F16;&#x7801;&#x7279;&#x5F81;&#x7684;&#x5C42;&#xFF0C;&#x901A;&#x8FC7;&#x5B66;&#x4E60;&#x8FD9;&#x4E9B;&#x7279;&#x5F81;&#x7684;&#x6743;&#x91CD;&#x6765;&#x8FBE;&#x5230;&#x8BC6;&#x522B;&#x7269;&#x4F53;</p>
+<ul>
+<li>&#x6709;&#x4E00;&#x4E2A;&#x6574;&#x6D01;&#x7684;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#x6765;&#x8C03;&#x6574;&#x6743;&#x91CD;</li>
+<li>&#x8FD9;&#x79CD;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#x4ECE;&#x6839;&#x672C;&#x4E0A;&#x9650;&#x5236;&#x4E86;&#x611F;&#x77E5;&#x673A;</li>
+</ul>
+<h3 id="&#x7B2C;&#x4E8C;&#x4EE3;nn-1980">&#x7B2C;&#x4E8C;&#x4EE3;nn (~1980)</h3>
+<h4 id="bp&#x7B97;&#x6CD5;&#x95EE;&#x4E16;">BP&#x7B97;&#x6CD5;&#x95EE;&#x4E16;</h4>
+<h4 id="&#x5C0F;&#x63D2;&#x66F2;">&#x5C0F;&#x63D2;&#x66F2;</h4>
+<p>vapnik&#x548C;&#x4ED6;&#x7684;&#x540C;&#x4E8B;&#x4EEC;&#x53D1;&#x660E;&#x4E86;&#x4E00;&#x4E2A;&#x806A;&#x660E;&#x7684;&#x611F;&#x77E5;&#x673A;&#xFF1A;SVM</p>
+<ul>
+<li>&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x624B;&#x5DE5;&#x7F16;&#x7801;&#x3001;&#x6CA1;&#x6709;&#x9002;&#x5E94;&#x80FD;&#x529B;&#x7279;&#x5F81;&#x7684;&#x5C42;&#x3002;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x6837;&#x672C;&#x4F1A;&#x901A;&#x8FC7;&#x4E00;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#x751F;&#x6210;&#x65B0;&#x7684;&#x7279;&#x5F81;</li>
+<li>&#x7075;&#x5DE7;&#x7684;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#x6765;&#x9009;&#x62E9;&#x6700;&#x4F18;&#x7279;&#x5F81;&#x96C6;&#x3002;&#x5F53;&#x5728;&#x5BF9;&#x6D4B;&#x8BD5;&#x6837;&#x672C;&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#x65F6;&#x8C03;&#x6574;&#x7279;&#x5F81;&#x7684;&#x6743;&#x91CD;&#x3002; &#x672C;&#x8D28;&#x4E0A;&#x8FD8;&#x662F;&#x611F;&#x77E5;&#x673A;&#x3002;&#x6709;&#x540C;&#x6837;&#x7684;&#x5C40;&#x9650;&#x6027;
+1990s,&#x5F88;&#x591A;&#x7814;&#x7A76;&#x5B66;&#x8005;&#x629B;&#x5F03;&#x4E86;&#x591A;&#x9690;&#x5C42;&#x7684;nn, &#x8F6C;&#x6295;svm&#x7684;&#x6000;&#x62B1;&#xFF1A; svm&#x66F4;&#x4F18;&#x79C0;</li>
+</ul>
+<h4 id="bp&#x95EE;&#x9898;&#x5728;&#x54EA;&#x91CC;">BP&#x95EE;&#x9898;&#x5728;&#x54EA;&#x91CC;</h4>
+<ul>
+<li>&#x9700;&#x8981;&#x6807;&#x7B7E;&#x6570;&#x636E;</li>
+<li>&#x8BAD;&#x7EC3;&#x65F6;&#x95F4;&#x592A;&#x6162;</li>
+<li>&#x4F1A;&#x9677;&#x5165;&#x5C40;&#x90E8;&#x6700;&#x4F18;</li>
+</ul>
+<h4 id="&#x514B;&#x670D;bp&#x7684;&#x5C40;&#x9650;">&#x514B;&#x670D;BP&#x7684;&#x5C40;&#x9650;</h4>
+<ul>
+<li><p>&#x4FDD;&#x7559;&#x901A;&#x8FC7;&#x68AF;&#x5EA6;&#x6765;&#x8C03;&#x6574;&#x7279;&#x5F81;&#x6743;&#x91CD;&#x7684;&#x65B9;&#x6CD5;&#xFF0C; &#x4F46;&#x62FF;&#x5B83;&#x6765;&#x5BF9;sensory input&#x5EFA;&#x6A21;   </p>
+<p>  &#x8C03;&#x6574;&#x751F;&#x6210;&#x6A21;&#x578B;&#x7684;&#x6743;&#x91CD;&#xFF0C;&#x4F7F;&#x5F97;&#x5F53;&#x524D;sensory input&#x7684;&#x6982;&#x7387;&#x6700;&#x5927;
+  &#x5B66;&#x4E60;P(image) not P(label|image)</p>
+</li>
+<li>&#x9009;&#x62E9;&#x54EA;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x751F;&#x6210;&#x6A21;&#x578B;&#x5462;&#xFF1F;<h4 id="belief-nets">Belief Nets</h4>
+</li>
+<li>&#x7531;&#x968F;&#x673A;&#x53D8;&#x91CF;&#x6784;&#x6210;&#x7684;&#x6709;&#x5411;&#x65E0;&#x73AF;&#x56FE;  </li>
+<li><p>&#x5F00;&#x59CB;&#x5173;&#x6CE8;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x53D8;&#x91CF;&#xFF0C; &#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x4E24;&#x4E2A;&#x95EE;&#x9898;&#xFF1A; </p>
+<ul>
+<li>&#x63A8;&#x65AD;&#x95EE;&#x9898;&#x3002; &#x63A8;&#x65AD;&#x6CA1;&#x6709;&#x5173;&#x6CE8;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x72B6;&#x6001;</li>
+<li>&#x5B66;&#x4E60;&#x95EE;&#x9898;&#x3002; &#x8C03;&#x6574;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x4E92;&#x5173;&#x7CFB;&#xFF0C; &#x4F7F;&#x5F97;&#x7F51;&#x7EDC;&#x66F4;&#x503E;&#x5411;&#x751F;&#x6210;&#x89C2;&#x6D4B;&#x53D8;&#x91CF;</li>
+</ul>
+</li>
+<li><p>&#x6211;&#x4EEC;&#x4F7F;&#x7528;stochastic binary variables&#x6784;&#x5EFA;&#x7684;&#x5C42; &#x548C; &#x5C42;&#x4E4B;&#x95F4;&#x52A0;&#x6743;&#x7684;&#x8FDE;&#x63A5;&#x6765;&#x6784;&#x5EFA;&#x7F51;&#x7EDC;&#x3002;&#x7A0D;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x63A8;&#x5E7F;&#x5230;&#x5176;&#x5B83;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;</p>
+</li>
+</ul>
+<h4 id="stochastic-binary-units-&#x4F2F;&#x52AA;&#x5229;&#x53D8;&#x91CF;">stochastic binary units (&#x4F2F;&#x52AA;&#x5229;&#x53D8;&#x91CF;)</h4>
+<ul>
+<li>&#x53EA;&#x6709;0 / 1 &#x72B6;&#x6001;</li>
+<li>&#x8BE5;&#x5355;&#x5143;&#x88AB;&#x6FC0;&#x6D3B;&#x7684;&#x6982;&#x7387;&#x7531;&#x5176;&#x5B83;&#x8F93;&#x5165;&#x5355;&#x5143;&#x7684;&#x6743;&#x91CD;&#x51B3;&#x5B9A;&#xFF08;&#x53EF;&#x4EE5;&#x6709;bias&#xFF09;</li>
+</ul>
+<h4 id="&#x5B66;&#x4E60;dbn">&#x5B66;&#x4E60;DBN</h4>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5728;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x65E0;&#x504F;&#x6837;&#x672C;&#xFF0C; &#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x7F51;&#x7EDC;&#x4FE1;&#x4EFB;&#x54EA;&#x79CD;&#x6570;&#x636E;</li>
+<li>&#x6240;&#x6709;&#x53EF;&#x80FD;&#x9690;&#x542B;&#x539F;&#x56E0;&#x7684;&#x914D;&#x7F6E;&#x7684;&#x540E;&#x9A8C;&#x6982;&#x7387;&#x662F;&#x5F88;&#x96BE;&#x63A8;&#x65AD;&#x7684;</li>
+<li>&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x540E;&#x9A8C;&#x6837;&#x672C;&#x90FD;&#x662F;&#x6781;&#x56F0;&#x96BE;&#x7684;</li>
+<li>&#x90A3;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x6765;&#x5B66;&#x4E60;&#x5177;&#x6709;&#x6570;&#x4EE5;&#x767E;&#x4E07;&#x8BA1;&#x53C2;&#x6570;&#x7684;DBN?</li>
+</ul>
+<h4 id="sigmoid-belief-nets&#x7684;&#x5B66;&#x4E60;&#x89C4;&#x5219;">sigmoid belief nets&#x7684;&#x5B66;&#x4E60;&#x89C4;&#x5219;</h4>
+<ul>
+<li>&#x5728;&#x7ED9;&#x5B9A;&#x89C2;&#x5BDF;&#x6570;&#x636E;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C; &#x5982;&#x679C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x4ECE;&#x9690;&#x542B;&#x72B6;&#x6001;&#x7684;&#x540E;&#x9A8C;&#x5206;&#x5E03;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x65E0;&#x504F;&#x6837;&#x672C; &#xFF0C;&#x90A3;&#x4E48;&#x5B66;&#x4E60;&#x5C06;&#x4F1A;&#x975E;&#x5E38;&#x5BB9;&#x6613;</li>
+<li>&#x53EF;&#x4EE5;&#x4ECE;&#x88AB;&#x62BD;&#x6837;&#x7684;&#x7236;&#x8282;&#x70B9;&#x7684;&#x4E8C;&#x5143;&#x72B6;&#x6001;  For each unit, maximize the log probability that its 
+binary state in the sample from the posterior would be generated by the sampled
+binary states of its parents
+&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5355;&#x5143;&#xFF0C; &#x6700;&#x5927;&#x5316;&#x5B83;&#x7684;&#x72B6;&#x6001;Log&#x6982;&#x7387;&#x3002; &#x5355;&#x5143;&#x7684;&#x72B6;&#x6001;&#x4ECE;&#x540E;&#x9A8C;&#x5206;&#x5E03;&#x4E2D;&#x62BD;&#x6837;&#x83B7;&#x53D6;&#x3002; &#x540E;&#x9A8C;&#x5206;&#x5E03;&#x7531;&#x5176;&#x5B83;&#x7236;&#x8282;&#x70B9;&#x7684;&#x62BD;&#x6837;&#x72B6;&#x6001;&#x51B3;&#x5B9A;&#x3002;</li>
+</ul>
+<h4 id="explaining-away">Explaining away</h4>
+<p>explaining away&#x6307;&#x7684;&#x662F;&#x8FD9;&#x6837;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x591A;&#x56E0;&#x4E00;&#x679C;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5047;&#x8BBE;&#x5404;&#x79CD;&#x201C;&#x56E0;&#x201D;&#x4E4B;&#x95F4;&#x90FD;&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x786E;&#x5B9A;&#x4E86;&#x662F;&#x56E0;&#x4E3A;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x539F;&#x56E0;&#x5BFC;&#x81F4;&#x4E86;&#x7ED3;&#x679C;&#xFF0C;&#x90A3;&#x4E48;&#x56E0;&#x4E3A;&#x5176;&#x4ED6;&#x539F;&#x56E0;&#x5BFC;&#x81F4;&#x4E86;&#x8BE5;&#x7ED3;&#x679C;&#x7684;&#x6982;&#x7387;&#x5C31;&#x4F1A;&#x4E0B;&#x964D;&#x3002;</p>
+<ul>
+<li>&#x5373;&#x4F7F;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#x72EC;&#x7ACB;&#x7684;&#x9690;&#x8282;&#x70B9;&#xFF0C; &#x4ED6;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x53D8;&#x6210;&#x6709;&#x4F9D;&#x8D56;&#x7684;&#x3002; &#x5F53;&#x6211;&#x4EEC;&#x89C2;&#x5BDF;&#x5230;&#x4E00;&#x4E2A;&#x4F1A;&#x540C;&#x65F6;&#x5F71;&#x54CD;&#x4ED6;&#x4EEC;&#x7684;&#x73B0;&#x8C61;&#x3002; 
+  &#x5F53;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x6709;&#x5730;&#x9707;&#x53D1;&#x751F;&#x65F6;&#xFF0C; &#x623F;&#x5B50;&#x56E0;&#x5361;&#x8F66;&#x800C;&#x8DF3;&#x8D77;&#x6765;&#x7684;&#x6982;&#x7387;&#x5C31;&#x51CF;&#x5C0F;&#x4E86;</li>
+</ul>
+<p>-</p>
+<h4 id="&#x4E3A;&#x4EC0;&#x4E48;&#x6BCF;&#x6B21;&#x5B66;&#x4E60;sigmoid-belief-nets&#x7684;&#x4E00;&#x5C42;&#x662F;&#x56F0;&#x96BE;&#x7684;">&#x4E3A;&#x4EC0;&#x4E48;&#x6BCF;&#x6B21;&#x5B66;&#x4E60;sigmoid belief nets&#x7684;&#x4E00;&#x5C42;&#x662F;&#x56F0;&#x96BE;&#x7684;</h4>
+<ul>
+<li>&#x5B66;&#x4E60;&#x6743;&#x91CD;W &#xFF0C;&#x9700;&#x8981;&#x77E5;&#x9053;&#x7B2C;&#x4E00;&#x4E2A;&#x9690;&#x5C42;&#x7684;&#x540E;&#x9A8C;&#x5206;&#x5E03;</li>
+<li>&#x95EE;&#x9898;1&#xFF1A; &#x7531;&#x4E8E;explaining away, &#x540E;&#x9A8C;&#x6982;&#x7387;&#x662F;&#x6781;&#x5176;&#x590D;&#x6742;&#x7684;</li>
+<li>&#x95EE;&#x9898;2&#xFF1A; &#x540E;&#x9A8C;&#x6982;&#x7387;&#x4F9D;&#x8D56;&#x5148;&#x9A8C;&#x548C;&#x4F3C;&#x7136;&#x6982;&#x7387;</li>
+<li>&#x95EE;&#x9898;3&#xFF1A; &#x4E3A;&#x4E86;&#x5F97;&#x5230;&#x7B2C;&#x4E00;&#x9690;&#x5C42;&#x7684;&#x5148;&#x9A8C;&#x6211;&#x4EEC;&#x5C31;&#x5F97;&#x6574;&#x5408;&#x6240;&#x6709;&#x66F4;&#x9AD8;&#x9690;&#x5C42;&#x7684;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x914D;&#x7F6E;</li>
+</ul>
+<h4 id="&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x751F;&#x6210;nn">&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x751F;&#x6210;nn</h4>
+<ul>
+<li>&#x4F7F;&#x7528;&#x6709;&#x5411;&#x65E0;&#x73AF;&#x56FE;&#x8FDE;&#x63A5;&#x968F;&#x673A;&#x4E8C;&#x5143;&#x795E;&#x7ECF;&#x5143;&#x7684;sigmoid belief net</li>
+<li>&#x4F7F;&#x7528;&#x5747;&#x8861;&#x8FDE;&#x63A5;&#x8FDE;&#x63A5;&#x968F;&#x673A;&#x4E8C;&#x5143;&#x795E;&#x7ECF;&#x5143;&#x7684;Boltzmann Machine</li>
+</ul>
+<h4 id="&#x53D7;&#x9650;bolztmann-machine">&#x53D7;&#x9650;bolztmann machine</h4>
+<ul>
+<li>&#x901A;&#x8FC7;&#x9650;&#x5236;&#x8FDE;&#x901A;&#x6027;&#x7B80;&#x5316;&#x8BAD;&#x7EC3;<ul>
+<li>&#x5355;&#x9690;&#x5C42;</li>
+<li>&#x9690;&#x5C42;&#x8282;&#x70B9;&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x8FDE;&#x63A5;</li>
+</ul>
+</li>
+<li>&#x5728;RBM&#x4E2D;&#xFF0C; &#x5728;&#x7ED9;&#x5B9A;&#x53EF;&#x89C1;&#x8282;&#x70B9;&#x65F6;&#xFF0C; &#x9690;&#x5C42;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x662F;&#x6761;&#x4EF6;&#x72EC;&#x7ACB;&#x7684;<ul>
+<li>&#x5F53;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5411;&#x91CF;&#x65F6;&#xFF0C; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x4ECE;&#x540E;&#x9A8C;&#x5206;&#x5E03;&#x4E2D;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x65E0;&#x504F;&#x6837;&#x672C;</li>
+<li>&#x8FD9;&#x662F;&#x6709;&#x5411;&#x4FE1;&#x5FF5;&#x7F51;&#x7EDC;&#x7684;&#x5DE8;&#x5927;&#x4F18;&#x52BF;</li>
+</ul>
+</li>
+</ul>
+<h4 id="the-energy-of-a-joint-configuration">The Energy of a joint configuration</h4>
+<p><img src="../assets/energy-join-configuration.png" alt=""></p>
+<h4 id="weights-&#xF0E0;-energies-&#xF0E0;-probabilities">Weights &#xF0E0; Energies &#xF0E0; Probabilities</h4>
+<ul>
+<li><p>&#x6BCF;&#x4E2A;&#x53EF;&#x89C6;&#x8282;&#x70B9;&#x4E0E;&#x9690;&#x5C42;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x8FDE;&#x63A5;&#x6709;&#x80FD;&#x91CF;&#x3002;</p>
+<p>  &#x80FD;&#x91CF;&#x6709;&#x6743;&#x91CD;&#x548C;&#x504F;&#x7F6E;&#x51B3;&#x5B9A;</p>
+</li>
+<li><p>&#x80FD;&#x91CF;&#x51B3;&#x5B9A;&#x6982;&#x7387;  </p>
+<h4 id="pvh&#x221D;e&#x2212;evh-pvh-propto--e-evh--pvh&#x221D;e&#x200B;&#x2212;evh&#x200B;&#x200B;"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>(</mo><mi>v</mi><mo separator="true">,</mo><mi>h</mi><mo>)</mo><mo>&#x221D;</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>E</mi><mo>(</mo><mi>v</mi><mo separator="true">,</mo><mi>h</mi><mo>)</mo></mrow></msup></mrow><annotation encoding="application/x-tex"> p(v,h) \propto  e^{-E(v,h)}  </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8879999999999999em;"></span><span class="strut bottom" style="height:1.138em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mpunct">,</span><span class="mord mathit">h</span><span class="mclose">)</span><span class="mrel">&#x221D;</span><span class="mord"><span class="mord mathit">e</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mtight">&#x2212;</span><span class="mord mathit mtight" style="margin-right:0.05764em;">E</span><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.03588em;">v</span><span class="mpunct mtight">,</span><span class="mord mathit mtight">h</span><span class="mclose mtight">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span></h4>
+</li>
+<li><p>&#x5173;&#x4E8E;&#x53EF;&#x89C6;&#x8282;&#x70B9;&#x7684;&#x914D;&#x7F6E;&#x7684;&#x6982;&#x7387;&#x7B49;&#x4E8E;&#x6240;&#x6709; joint configurations &#x7684;&#x6982;&#x7387;&#x4E4B;&#x548C;</p>
+</li>
+</ul>
+<h4 id="&#x4F7F;&#x7528;&#x80FD;&#x91CF;&#x6765;&#x5B9A;&#x4E49;&#x6982;&#x7387;">&#x4F7F;&#x7528;&#x80FD;&#x91CF;&#x6765;&#x5B9A;&#x4E49;&#x6982;&#x7387;</h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="deep-sparse-rectifier-neural-networks.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: deep sparse rectifier neural networks">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"deep belief nets","level":"1.5.3","depth":2,"previous":{"title":"deep sparse rectifier neural networks","level":"1.5.2","depth":2,"path":"LML/deep-sparse-rectifier-neural-networks.md","ref":"LML/deep-sparse-rectifier-neural-networks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-mathjax","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"shortName":"gitbookuse"},"github":{"url":"https://github.com/huilixiang/gitbook"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"huilixiang/gitbook","types":["star"],"size":"small"},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"base":"https://github.com/huilixiang/gitbook/edit/master","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"huajie","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"工作笔记","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"记录工作内容及学习笔记"},"file":{"path":"LML/deep-belief-networks.md","mtime":"2017-12-29T04:03:31.424Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-30T09:06:31.031Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
