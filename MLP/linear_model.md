@@ -31,6 +31,6 @@ Y是定性变量-->分类， 常用逻辑回归
 - logit函数  
  ####  $$ ln(\frac{p}{1-p}) = w_0 + w^TX $$
 - logit反函数 logistic function:
- ###  $$ \frac{e^{a_0 + a^TX }}{1+e^{a_0 + a^TX} }$$
+ ###  $$ \frac{e^{w_0 + w^TX }}{1+e^{w_0 + w^TX} }$$
 
  
