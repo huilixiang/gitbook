@@ -32,5 +32,7 @@ Y是定性变量-->分类， 常用逻辑回归
  ####  $$ ln(\frac{p}{1-p}) = w_0 + w^TX $$
 - logit反函数 logistic function:
  ###  $$ \frac{e^{w_0 + w^TX }}{1+e^{w_0 + w^TX} }$$
+- 极大似然  
+  $$p(Y|X,W)$$
 
  
