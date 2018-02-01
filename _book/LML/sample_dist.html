@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>ML分享 · 工作笔记</title>
+        <title>抽样分布 · 工作笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="linear_model.html" />
+    <link rel="next" href="deep-sparse-rectifier-neural-networks.html" />
     
     
-    <link rel="prev" href="../LML/deep-belief-networks.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -195,9 +195,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../LML/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../LML/">
+                <a href="./">
             
                     
                         <b>1.5.</b>
@@ -211,9 +211,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../LML/sample_dist.html">
+        <li class="chapter active" data-level="1.5.1" data-path="sample_dist.html">
             
-                <a href="../LML/sample_dist.html">
+                <a href="sample_dist.html">
             
                     
                         <b>1.5.1.</b>
@@ -226,9 +226,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../LML/deep-sparse-rectifier-neural-networks.html">
+        <li class="chapter " data-level="1.5.2" data-path="deep-sparse-rectifier-neural-networks.html">
             
-                <a href="../LML/deep-sparse-rectifier-neural-networks.html">
+                <a href="deep-sparse-rectifier-neural-networks.html">
             
                     
                         <b>1.5.2.</b>
@@ -241,9 +241,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../LML/deep-belief-networks.html">
+        <li class="chapter " data-level="1.5.3" data-path="deep-belief-networks.html">
             
-                <a href="../LML/deep-belief-networks.html">
+                <a href="deep-belief-networks.html">
             
                     
                         <b>1.5.3.</b>
@@ -261,9 +261,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="./">
+        <li class="chapter " data-level="1.6" data-path="../MLP/">
             
-                <a href="./">
+                <a href="../MLP/">
             
                     
                         <b>1.6.</b>
@@ -277,9 +277,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="linear_model.html">
+        <li class="chapter " data-level="1.6.1" data-path="../MLP/linear_model.html">
             
-                <a href="linear_model.html">
+                <a href="../MLP/linear_model.html">
             
                     
                         <b>1.6.1.</b>
@@ -327,7 +327,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >ML分享</a>
+        <a href=".." >抽样分布</a>
     </h1>
 </div>
 
@@ -342,7 +342,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ml&#x5206;&#x4EAB;">ML&#x5206;&#x4EAB;</h1>
+                                <h2 id="&#x62BD;&#x6837;&#x5206;&#x5E03;">&#x62BD;&#x6837;&#x5206;&#x5E03;</h2>
+<p>&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5F97;&#x5230;&#x67D0;&#x603B;&#x4F53;&#x7279;&#x5F81;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F46;&#x5BF9;&#x603B;&#x4F53;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x5EA6;&#x91CF;&#x662F;&#x4E0D;&#x884C;&#x7684;&#xFF0C; &#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4F1A;&#x8FDB;&#x884C;&#x968F;&#x673A;&#x62BD;&#x6837;&#x3002;&#x7528;&#x6837;&#x672C;&#x7684;&#x7279;&#x5F81;&#x6765;&#x6982;&#x62EC;&#x603B;&#x4F53;&#x7684;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<p>&#x53C2;&#x6570;&#x662F;&#x6574;&#x4E2A;&#x603B;&#x4F53;&#x7684;&#x63CF;&#x8FF0;&#x6027;&#x5EA6;&#x91CF;&#xFF0C;&#x662F;&#x56FA;&#x5B9A;&#x5E38;&#x91CF;&#xFF0C;&#x4F46;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x672A;&#x77E5;&#x7684;---&#x4E0D;&#x80FD;&#x5BF9;&#x6574;&#x4F53;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x5EA6;&#x91CF;</p>
+<h3 id="&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x503C;">&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x503C;</h3>
+<p>&#x56E0;&#x4E3A;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5BF9;&#x603B;&#x4F53;&#x8FDB;&#x884C;&#x5EA6;&#x91CF;&#xFF0C;&#x6545;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x4ECE;&#x603B;&#x4F53;&#x4E2D;&#x968F;&#x673A;&#x62BD;&#x6837;&#x6765;&#x83B7;&#x53D6;&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x503C;&#xFF1A;&#x5373;&#x6837;&#x672C;&#x7EDF;&#x8BA1;&#x91CF;&#x3002; &#x6709;&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x503C;&#xFF0C;&#x5FC5;&#x987B;&#x5F97;&#x5173;&#x8054;&#x4F30;&#x8BA1;&#x8BEF;&#x5DEE;</p>
+<h3 id="&#x70B9;&#x4F30;&#x8BA1;&#x4E0E;&#x533A;&#x95F4;&#x4F30;&#x8BA1;">&#x70B9;&#x4F30;&#x8BA1;&#x4E0E;&#x533A;&#x95F4;&#x4F30;&#x8BA1;</h3>
+<p>&#x70B9;&#x4F30;&#x8BA1;&#x662F;&#x53C2;&#x6570;&#x7684;&#x5355;&#x4E00;&#x6700;&#x53EF;&#x80FD;&#x503C;&#xFF0C;&#x7F6E;&#x4FE1;&#x533A;&#x95F4;&#x662F;&#x53C2;&#x6570;&#x7684;&#x503C;&#x8303;&#x56F4;</p>
+<h3 id="&#x91C7;&#x6837;&#x5206;&#x5E03;">&#x91C7;&#x6837;&#x5206;&#x5E03;</h3>
+<p>&#x91C7;&#x6837;&#x5206;&#x5E03;&#x662F;&#x7ED9;&#x5B9A;&#x7EDF;&#x8BA1;&#x91CF;&#x7684;&#x6982;&#x7387;&#x5206;&#x5E03;&#x3002;&#x6BD4;&#x5982;&#x5747;&#x503C;&#x3002;</p>
 
                                 
                                 </section>
@@ -370,12 +379,12 @@
 
             
                 
-                <a href="../LML/deep-belief-networks.html" class="navigation navigation-prev " aria-label="Previous page: deep belief nets">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: ML拾遗">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="linear_model.html" class="navigation navigation-next " aria-label="Next page: 线性模型">
+                <a href="deep-sparse-rectifier-neural-networks.html" class="navigation navigation-next " aria-label="Next page: deep sparse rectifier neural networks">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -386,7 +395,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ML分享","level":"1.6","depth":1,"next":{"title":"线性模型","level":"1.6.1","depth":2,"path":"MLP/linear_model.md","ref":"MLP/linear_model.md","articles":[]},"previous":{"title":"deep belief nets","level":"1.5.3","depth":2,"path":"LML/deep-belief-networks.md","ref":"LML/deep-belief-networks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-mathjax","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"shortName":"gitbookuse"},"github":{"url":"https://github.com/huilixiang/gitbook"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"huilixiang/gitbook","types":["star"],"size":"small"},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"base":"https://github.com/huilixiang/gitbook/edit/master","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"huajie","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"工作笔记","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"记录工作内容及学习笔记"},"file":{"path":"MLP/README.md","mtime":"2018-02-01T11:01:22.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-01T11:16:44.062Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"抽样分布","level":"1.5.1","depth":2,"next":{"title":"deep sparse rectifier neural networks","level":"1.5.2","depth":2,"path":"LML/deep-sparse-rectifier-neural-networks.md","ref":"LML/deep-sparse-rectifier-neural-networks.md","articles":[]},"previous":{"title":"ML拾遗","level":"1.5","depth":1,"path":"LML/README.md","ref":"LML/README.md","articles":[{"title":"抽样分布","level":"1.5.1","depth":2,"path":"LML/sample_dist.md","ref":"LML/sample_dist.md","articles":[]},{"title":"deep sparse rectifier neural networks","level":"1.5.2","depth":2,"path":"LML/deep-sparse-rectifier-neural-networks.md","ref":"LML/deep-sparse-rectifier-neural-networks.md","articles":[]},{"title":"deep belief nets","level":"1.5.3","depth":2,"path":"LML/deep-belief-networks.md","ref":"LML/deep-belief-networks.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-mathjax","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"shortName":"gitbookuse"},"github":{"url":"https://github.com/huilixiang/gitbook"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"huilixiang/gitbook","types":["star"],"size":"small"},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"base":"https://github.com/huilixiang/gitbook/edit/master","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"huajie","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"工作笔记","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"记录工作内容及学习笔记"},"file":{"path":"LML/sample_dist.md","mtime":"2017-12-11T04:17:38.868Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-01T11:16:44.062Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
