@@ -37,11 +37,13 @@ Y是定性变量-->分类， 常用逻辑回归
 - 极大似然  
   给定X,W时，$$ Y \subseteq{\{0,1\}} $$  
       
-  $$p(Y|X,W)$$ ~ Bernoulli distribution
+  $$p(Y|X,W)$$ ~ Bernoulli(\varphi)
   
   假设所有的Y独立同分布， 则联合概率密度：
   #### L(w) = $$\prod_{i}^{n} p(x)^y \cdot (1-p(x))^{1 - y}$$
   #### max L(w)
+  
+### 线性回归
   
   
   
