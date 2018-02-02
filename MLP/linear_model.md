@@ -51,7 +51,7 @@ y是定性变量-->分类， 常用逻辑回归
 - ridge: $$p(W) \sim N(0, \lambda^2) $$ 
 - lasso: $$p(W) \sim Laplace(0, \lambda) $$
 
-### 
+### 逻辑回归的损失函数
 
   
   
