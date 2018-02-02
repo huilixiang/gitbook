@@ -44,7 +44,11 @@ y是定性变量-->分类， 常用逻辑回归
   #### L(w) = $$\prod_{i}^{n} p(x)^y \cdot (1-p(x))^{1 - y}$$
   #### max L(w) 
   
-### 
+### 正则化与先验
+- 似然函数联想到先验和后验
+- 极大后验  
+  $$ p(W|Y,X) \propto f(Y|X,W)p(W|X) = f(Y|X,W)p(W) $$
+- ridge: $$p(W) \sim N(0, \lambda^2) $$ 
 
   
   
