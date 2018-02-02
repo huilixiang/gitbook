@@ -51,7 +51,7 @@ y是定性变量-->分类， 常用逻辑回归
 - ridge: $$p(W) \sim N(0, \lambda^2) $$ 
 - lasso: $$p(W) \sim Laplace(0, \lambda) $$
 
-### 逻辑回归的损失函数 <span id="rgl_pri"></span>
+### 逻辑回归的损失函数 <span id="lr_loss"></span>
 - 熵 , 系统的混乱程度或者不纯度。 p：表示随机变量的概率分布函数，$$p_{i}$$代表随机变量i发生的概率
   #### $$H(y) = \sum_{i}p_{i}log\frac{1}{p_{i}} = -\sum_{i}p_{i}logp_{i}$$
 - 交叉熵  y的真实分布一般未知， 我们只有近似分布 $$\hat{p}$$. 此时系统混乱程度
