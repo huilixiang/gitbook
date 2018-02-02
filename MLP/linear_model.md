@@ -5,7 +5,6 @@
 - [正则化与先验](#rgl_pri)
 - [逻辑回归的损失函数](#lr_loss)
 - [广义线性模型](#glm)
-- [广义可加模型](#gam)
 
 ## 线性模型<span id="linear_model"></span>
 响应变量(因变量)y是关于预测变量（自变量）x的线性函数
@@ -56,7 +55,10 @@ y是定性变量-->分类， 常用逻辑回归
   #### $$H(y) = \sum_{i}p_{i}log\frac{1}{p_{i}} = -\sum_{i}p_{i}logp_{i}$$
 - 交叉熵  y的真实分布一般未知， 我们只有近似分布 $$\hat{p}$$. 此时系统混乱程度
   #### cross entropy $$ = -\sum_{i}p_{i}log\hat{p}_{i}$$ 
-- 当 $$ i \sim Bernoulli(p) $$ 等价
+- 当 $$ i \sim Bernoulli(p) $$ 时， 极大似然的负对数与cross entropy 损失一致
+
+### 广义线性模型<span id="glm"></span>
+
 
   
 
