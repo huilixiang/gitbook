@@ -12,7 +12,7 @@
 ## 线性模型<span id="linear_model"></span>
 响应变量(因变量)y是关于预测变量（自变量）x的线性函数
 ### 简单线性模型
-$$ y_i = w_0 + w_1X_{1i} + \epsilon $$
+$$ y_i = w_0 + w_1X_i + \epsilon $$
 ### 线性模型
 模型F是关于参数w的线性函数： $$ y = w_0 + w_1X_1+w_2X_2+...+w_nX_n + \epsilon  $$
 ### 回归与分类
