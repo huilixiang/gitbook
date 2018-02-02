@@ -52,6 +52,9 @@ y是定性变量-->分类， 常用逻辑回归
 - lasso: $$p(W) \sim Laplace(0, \lambda) $$
 
 ### 逻辑回归的损失函数
+- 熵  
+  #### $$H(y) = \sum_{i}p(y_{i}log\frac{1}{p(y_{i})})$$
+- 
 
   
   
