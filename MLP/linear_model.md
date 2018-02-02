@@ -59,7 +59,7 @@ y是定性变量-->分类， 常用逻辑回归
 
 ### 广义线性模型<span id="glm"></span>
 - y与x之间的非线性关系
-  $$ g(y_i) = \varphi(X) + \epsilon_i  $$ 
+  $$ g(y) = \varphi(X) + \epsilon  $$ 
 
   
 
