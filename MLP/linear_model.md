@@ -56,7 +56,9 @@ y是定性变量-->分类， 常用逻辑回归
   #### $$H(y) = \sum_{i}p_{i}log\frac{1}{p_{i}} = -\sum_{i}p_{i}logp_{i}$$
 - 交叉熵  y的真实分布一般未知， 我们只有近似分布 $$\hat{p}$$. 此时系统混乱程度
   #### cross entropy $$ = -\sum_{i}p_{i}log\hat{p}_{i}$$ 
-- 如果$$ i \sim Bernoulli(p) $$
+- 如果$$ i \sim Bernoulli(p) $$   
+
+  cross entropy = 
 
   
 
