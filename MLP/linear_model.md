@@ -49,7 +49,7 @@ y是定性变量-->分类， 常用逻辑回归
 - 极大后验  
   $$ p(W|Y,X) \propto f(Y|X,W)p(W|X) = f(Y|X,W)p(W) $$
 - ridge: $$p(W) \sim N(0, \lambda^2) $$ 
-- lasso: $$p(W) \sim Laplace $$
+- lasso: $$p(W) \sim Laplace(0, \lambda) $$
 
   
   
