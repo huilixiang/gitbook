@@ -15,7 +15,7 @@
 $$ y_i = w_0 + w_1x_i + \epsilon_i $$
 ### 多元线性模型
 具有多个预测变量
-$$ Y_i = w_0 + w_1x_{1i}+w_2x_{2i}+...+w_nx_{ni} + \epsilon_i  $$   
+$$ y_i = w_0 + w_1x_{1i}+w_2x_{2i}+...+w_nx_{ni} + \epsilon_i  $$   
 ### 回归与分类<span id="rgr_cls"></span>
 Y是定量变量-->回归， 常用线性回归
 Y是定性变量-->分类， 常用逻辑回归
