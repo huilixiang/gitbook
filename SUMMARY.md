@@ -12,4 +12,5 @@
     * [deep belief nets](LML/deep-belief-networks.md)
 * [ML分享](MLP/README.md)
     * [线性模型](MLP/linear_model.md)
+* [日常工作](routine/README.md)
 
