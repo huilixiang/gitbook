@@ -18,7 +18,7 @@
 - 对于任意的$$(v_i, w_i)$$, 两者的关系可以描述为： 
    
   $$v_i = E[V|W=w_i] + \zeta $$ 
-  其中 $$\zeta Z$$
+  其中 $$\zeta \subseteq Z$$
   
       
       
