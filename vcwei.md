@@ -19,6 +19,9 @@
    
   $$v_i = E[V|W=w_i] + \zeta $$ 
   其中 $$\zeta \subseteq Z$$ ，噪声项
+- 我们可以把上述的关系描述应用到我们的统计模型上：
+  $$y_i = E[Y|X=x_i] + \zeta $$ 
+
   
       
       
