@@ -39,7 +39,8 @@
 - in-sample error, empirical risk:  
 
   $$R_{emp}(h)=\frac{1}{m}\sum_{i}^{m}L(y_{i},h(x_{i}))$$
-- 
+- 问题解决了么？
+### 
    
 
   
