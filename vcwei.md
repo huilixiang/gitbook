@@ -36,7 +36,9 @@
 - 损失函数   
 
   $$L(Y,\hat{Y})$$
-- in-sample error, empirical error
+- in-sample error, empirical risk:  
+
+  $$$$
    
 
   
