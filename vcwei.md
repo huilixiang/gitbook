@@ -64,7 +64,7 @@
 ### 大数定理
 - 弱大数定理： 当样本集足够大时， 样本均值趋近于总体均值   
    
-  $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon]$$ 
+  $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] = 0$$ 
 - 
 
       
