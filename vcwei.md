@@ -71,8 +71,10 @@
   看到曝光了， 还能做的更好！
 ### Hoeffding`s inequality
 - LLN 指明的前进的方向， 但没有告诉我们怎样可以快速到达
-- 集中不等式： concentration inequalities:  
-  
+- 集中不等式： concentration inequalities:    
+
+  $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] = 0$$ 
+
   
 
       
