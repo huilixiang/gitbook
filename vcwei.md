@@ -90,6 +90,7 @@ $$P[\underset{{h}\sim{H}}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq  2|H|exp(-2m\
   因此记忆模型的效果不佳可以解释为： 其泛化误差的上界趋于正无穷
   
   
+  
       
       
     
