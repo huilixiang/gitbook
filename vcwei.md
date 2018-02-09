@@ -73,8 +73,8 @@
 - LLN 指明的前进的方向， 但没有告诉我们怎样可以快速到达
 - 集中不等式： concentration inequalities:    
 
-  $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] = 0$$ 
-
+  $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] \leq 2exp(\frac{-2m\epsilon^2}{(b-a)^2})$$ 
+  $$ a \geq x_i \leq b $$
   
 
       
