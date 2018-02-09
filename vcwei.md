@@ -82,8 +82,8 @@
 - 对于整个假设空间， 我们有：  
 
   $$P[\underset{{h}\sim{H}}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq \sum_{{h}\sim{H}} P[|R(h) - R_{emp}(h)| > \epsilon] $$ 
-  
-- 
+$$P[\underset{{h}\sim{H}}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq  2|H|exp(-2m\epsilon^2) $$
+ 
   
       
       
