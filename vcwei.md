@@ -75,7 +75,7 @@
 
   $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] \leq 2exp(\frac{-2m\epsilon^2}{(b-a)^2})$$ 
   $$ a \leq x_i \leq b $$ , 对于二分类问题， $$(b-a)^2 == 1$$
-  $$P[|R(h) - R_{emp}(h)| > \epsilon]$$
+  $$P[|R(h) - R_{emp}(h)| > \epsilon] \leq 2exp(-2m\epsilon^2)$$
 
       
       
