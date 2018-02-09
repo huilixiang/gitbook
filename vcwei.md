@@ -83,6 +83,8 @@
 
   $$P[\underset{{h}\sim{H}}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq \sum_{{h}\sim{H}} P[|R(h) - R_{emp}(h)| > \epsilon] $$ 
   
+- 
+  
       
       
     
