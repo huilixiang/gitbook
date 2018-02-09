@@ -39,9 +39,10 @@
 - in-sample error, empirical risk:  
 
   $$R_{emp}(h)=\frac{1}{m}\sum_{i}^{m}L(y_{i},h(x_{i}))$$
+- 选择使得$$R_{emp}(h)最优的目标函数f$$
 - 问题解决了么？
 ### 泛化误差
-   
+-  
 
   
       
