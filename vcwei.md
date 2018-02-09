@@ -86,6 +86,8 @@ $$P[\underset{{h}\sim{H}}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq  2|H|exp(-2m\
   with confidence $$1 - \delta$$
   $$|R(h) - R_{emp}(h)| \leq \epsilon \Rightarrow R(h) \leq R_{emp}(h) + \epsilon $$ 
   $$R(h) \leq R_{emp}(h) + \sqrt{\frac{ln|H|+ln{\frac{2}{\delta}}}{2m}}$$ -- 第一个泛化界公式
+  泛化界与假设空间大小、数据集大小相关。 假设空间越复杂， 泛化误差的上界越大！ 
+  因此记忆模型的效果不佳可以解释为： 其泛化误差的上界趋于正无穷
   
   
       
