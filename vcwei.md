@@ -84,7 +84,7 @@
   $$P[\underset{{h}\sim{H}}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq \sum_{{h}\sim{H}} P[|R(h) - R_{emp}(h)| > \epsilon] $$ 
 $$P[\underset{{h}\sim{H}}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq  2|H|exp(-2m\epsilon^2) $$
  
-  $$|R(h) - R_{emp}(h)| \leq \epsilon \Rightarrow R(h) <= R_{emp}(h) + \epsilon $$ 
+  $$|R(h) - R_{emp}(h)| \leq \epsilon \Rightarrow R(h) \leq R_{emp}(h) + \epsilon $$ 
       
       
     
