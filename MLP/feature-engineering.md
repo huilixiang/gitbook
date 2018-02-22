@@ -3,5 +3,5 @@
 How do you get the most out of your data for predictive modeling?
 ### Importance of Feature Engineering
 - Better features means flexibility. even wrong model
-- Better features means simpler models. 
-- Better features means better results
+- Better features means simpler models.  simple model or parameters less than optimal 
+- Better features means better results.
