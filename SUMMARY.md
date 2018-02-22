@@ -12,6 +12,7 @@
   * [deep belief nets](LML/deep-belief-networks.md)
 * [ML分享](MLP/README.md)
   * [线性模型](MLP/linear_model.md)
+  * [feature engineering](MLP/feature-engineering.md)
   * [VC维](vcwei.md)
 * [日常工作](routine/README.md)
 
