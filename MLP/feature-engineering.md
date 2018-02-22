@@ -13,4 +13,5 @@ Feature engineering is the process of transforming raw data into features that b
 ### Feature: An attribute useful for your modeling task
 ### Feature Importance: An estimate of the usefulness of a feature
 ### Feature Extraction: The automatic construction of new features from raw data
+### Feature Selection: From many features to a few that are useful
 
