@@ -11,4 +11,5 @@ Feature engineering is the process of transforming raw data into features that b
 - Feature Engineering is an Art. 
 ## Sub-Problems of Feature Engineering
 ### Feature: An attribute useful for your modeling task
+### Feature Importance: An estimate of the usefulness of a feature
 
