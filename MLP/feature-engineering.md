@@ -5,3 +5,4 @@ How do you get the most out of your data for predictive modeling?
 - Better features means flexibility. even wrong model
 - Better features means simpler models.  simple model or parameters less than optimal 
 - Better features means better results.
+### What is Feature Engineering?
