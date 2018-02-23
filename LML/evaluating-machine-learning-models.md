@@ -13,6 +13,7 @@
 - prototype---model selection  
 - deployed model
 - offline & online evaluation
+
 ## why is it so complicated?
 ### difference between off/online evaluation
 - offline  </br>
