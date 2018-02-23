@@ -38,7 +38,7 @@
     The marketing analytics community uses lift and gain charts. 
     The medical modeling community often looks at odds ratios.
     The statistics community examines sensitivity and specificity
-    
+  
 ### ranking metrics
 - precision-recall (also popular for classification tasks)
 - f1
