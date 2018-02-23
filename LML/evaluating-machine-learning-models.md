@@ -33,7 +33,7 @@
 - confusion matrix
 - log-loss
 - auc <br/>
-    > The ROC curve shows the sensitivity of the classifier by plotting the rate of true positives to the rate of false positives. 
+    > The ROC curve shows the sensitivity of the classifier by plotting the rate of true positives to the rate of false positives. In other words, it shows you how many correct positive classifications can be gained as you allow for more and more false positives
 - 
 
 ### offline evaluation mechanisms
