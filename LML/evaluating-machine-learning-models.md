@@ -26,6 +26,9 @@
 - assume:  the distribution of data stays the same over time
 
 ## evaluation metrics
+### classification metrics
+
+
 
 ### offline evaluation mechanisms
 - prototype: select right model to fit the data
