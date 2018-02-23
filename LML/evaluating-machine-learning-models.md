@@ -10,4 +10,5 @@
 - How would I know when I’ve succeeded?
 ## machine learning workflow
 - prototype---model selection  
-- a
+- deploy model
+- 
