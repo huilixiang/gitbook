@@ -52,6 +52,7 @@
 - prototype: select right model to fit the data
 - hold-out validation, also as known: k-fold cross-validation 
 
+### caution:  The Dierence Between Training Metrics and Evaluation Metrics
 
 
 
