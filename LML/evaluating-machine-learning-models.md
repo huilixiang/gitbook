@@ -46,7 +46,7 @@
 
 ### regression metrics
 - RMSE ( sensitive to large outliers)
-- 
+- MAPE ( median absolute percentage error)
  
 ### offline evaluation mechanisms
 - prototype: select right model to fit the data
