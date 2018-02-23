@@ -31,7 +31,7 @@
     > measures how often the classifier makes the correct prediction.
     > correct answers for class 0 and class 1 are treated equally
 - confusion matrix
-    > 
+- log-loss
 
 ### offline evaluation mechanisms
 - prototype: select right model to fit the data
