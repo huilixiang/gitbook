@@ -57,5 +57,7 @@
 - It is always better to train the model to directly optimize for the metric it will be evaluated on
 - For instance, it’s very hard to directly optimize the AUC
 
+### caution: Skewed Datasets—Imbalanced Classes, Outliers, and Rare Data
+
 
 
