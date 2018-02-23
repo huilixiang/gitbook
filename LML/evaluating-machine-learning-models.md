@@ -32,6 +32,8 @@
     > correct answers for class 0 and class 1 are treated equally
 - confusion matrix
 - log-loss
+- auc
+- 
 
 ### offline evaluation mechanisms
 - prototype: select right model to fit the data
