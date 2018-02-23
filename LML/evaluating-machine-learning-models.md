@@ -13,4 +13,5 @@
 - deployed model
 - offline & online evaluation
 ## difference between off/online evaluation
-- 
+- offline  
+    
