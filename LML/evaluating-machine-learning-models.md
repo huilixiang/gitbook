@@ -45,7 +45,7 @@
 - NDCG
 
 ### regression metrics
-- 
+- RMSE
 
 ### offline evaluation mechanisms
 - prototype: select right model to fit the data
