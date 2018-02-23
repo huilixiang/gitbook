@@ -42,7 +42,7 @@
 ### ranking metrics
 - precision-recall (also popular for classification tasks)
 - f1
-- NDCG
+- NDCG (Precision and recall treat all retrieved items equally)
 
 ### regression metrics
 - RMSE ( sensitive to large outliers)
