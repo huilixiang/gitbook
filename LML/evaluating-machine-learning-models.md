@@ -29,7 +29,7 @@
 ### classification metrics
 - accuracy <br/>
     > measures how often the classifier makes the correct prediction.
-    > 
+    > correct answers for class 0 and class 1 are treated equally
 - confusion matrix
 
 
