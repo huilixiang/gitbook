@@ -10,4 +10,6 @@
 采样分布是给定统计量的概率分布。比如均值。
 
 ## 假设检验
+### Student`s T-distribution
+
 ### T-test
