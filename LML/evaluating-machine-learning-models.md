@@ -14,4 +14,6 @@
 - offline & online evaluation
 ## difference between off/online evaluation
 - offline  </br>
-    >asdf
+    >accuracy ; precision-recall
+- online <br/>
+    >
