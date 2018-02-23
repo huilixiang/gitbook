@@ -16,4 +16,4 @@
 - offline  </br>
     >accuracy ; precision-recall
 - online <br/>
-    >asdf
+    >business metrics:
