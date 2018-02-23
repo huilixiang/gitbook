@@ -23,4 +23,4 @@
     
 ### distribution drift
 - historical and live data
-- 
+- assume:  the distribution of data stays the same over time
