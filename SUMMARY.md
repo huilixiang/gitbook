@@ -8,7 +8,7 @@
   * [笔记](MLYearning/notes.md)
 * [ML拾遗](LML/README.md)
   * [抽样分布](LML/sample_dist.md)
-  * evaluating machine learning models
+  * [evaluating machine learning models](LML/evaluating-machine-learning-models.md)
   * [deep sparse rectifier neural networks](LML/deep-sparse-rectifier-neural-networks.md)
   * [deep belief nets](LML/deep-belief-networks.md)
 * [ML分享](MLP/README.md)
