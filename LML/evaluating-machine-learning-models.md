@@ -27,7 +27,7 @@
 
 ## evaluation metrics
 ### classification metrics
-
+- accuracy
 
 
 ### offline evaluation mechanisms
