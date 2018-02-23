@@ -17,5 +17,3 @@
     >accuracy ; precision-recall
 - online <br/>
     >business metrics: LTV
-- training <br/>
-    >
