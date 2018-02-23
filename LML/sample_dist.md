@@ -12,4 +12,6 @@
 ## 假设检验
 ### Student`s T-distribution
 用于根据小样本来估计呈正态分布且方差未知的总体的均值.如果总体方差已知（例如在样本数量足够多时），则应该用正态分布来估计总体均值。
+### chi-square distribution
+
 ### T-test
