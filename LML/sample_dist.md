@@ -11,5 +11,5 @@
 
 ## 假设检验
 ### Student`s T-distribution
-
+用于根据小样本来估计呈正态分布且方差未知的总体的均值
 ### T-test
