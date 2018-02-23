@@ -42,7 +42,8 @@
 - precision-recall (also popular for classification tasks)
 - f1
 - NDCG
-
+### regression metrics
+- 
 ### offline evaluation mechanisms
 - prototype: select right model to fit the data
 - hold-out validation, also as known: k-fold cross-validation
