@@ -28,6 +28,7 @@
 ## evaluation metrics
 ### classification metrics
 - accuracy
+- confusion matrix
 
 
 ### offline evaluation mechanisms
