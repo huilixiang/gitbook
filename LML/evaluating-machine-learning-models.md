@@ -8,4 +8,5 @@
 ## outset question
 - How can I measure success for this project?
 - How would I know when I’ve succeeded?
-
+## machine learning workflow
+- 
