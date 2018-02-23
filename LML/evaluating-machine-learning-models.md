@@ -40,6 +40,8 @@
     The statistics community examines sensitivity and specificity
 ### ranking metrics
 - precision-recall (also popular for classification tasks)
+- f1
+- NDCG
 
 ### offline evaluation mechanisms
 - prototype: select right model to fit the data
