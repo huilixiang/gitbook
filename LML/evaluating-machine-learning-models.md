@@ -12,9 +12,13 @@
 - prototype---model selection  
 - deployed model
 - offline & online evaluation
-## difference between off/online evaluation
+## why is it so complicated?
+### difference between off/online evaluation
 - offline  </br>
     >accuracy ; precision-recall
 - online <br/>
     >business metrics: LTV
-## 
+    
+### distribution drift
+- historical and live data
+- 
