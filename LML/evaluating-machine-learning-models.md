@@ -27,7 +27,8 @@
 
 ## evaluation metrics
 ### classification metrics
-- accuracy
+- accuracy <br/>
+    > measures how often the classifier makes the correct prediction.
 - confusion matrix
 
 
