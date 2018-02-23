@@ -55,7 +55,7 @@
 ### caution:  The Dierence Between Training Metrics and Evaluation Metrics
 - training: minimizing the loss
 - It is always better to train the model to directly optimize for the metric it will be evaluated on
-- 
+- For instance, it’s very hard to directly optimize the AUC
 
 
 
