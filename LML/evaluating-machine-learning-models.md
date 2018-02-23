@@ -10,4 +10,4 @@
 - How would I know when I’ve succeeded?
 ## machine learning workflow
 1. prototype---model selection  
-2.
+2. a
