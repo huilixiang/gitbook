@@ -43,6 +43,7 @@ vapnik和他的同事们发明了一个聪明的感知机：SVM
     调整生成模型的权重，使得当前sensory input的概率最大
     学习P(image) not P(label|image)
 - 选择哪种类型的生成模型呢？
+
 #### Belief Nets
 - 由随机变量构成的有向无环图  
 - 开始关注其中的一些变量， 可以解决两个问题： 
