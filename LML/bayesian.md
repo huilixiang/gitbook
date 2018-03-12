@@ -18,7 +18,7 @@
 - 则先验概率q（此时q未知）的先验为贝塔分布 <br/>
     $$p(q)=\frac{q^{\alpha-1}*(1-q)^{\beta-1}}{B(\alpha, \beta)}$$
 - 如果我们对x进行一次采样， 得到s次成功， f次失败， 则： <br/>
-    $$p(s,f|q=x) = \binom{s+f}{s}q^{s}(1-q)^{f}$$ <br/> 
+    $$p(s,f|q=x) = \binom{s+f}{s}x^{s}(1-x)^{f}$$ <br/> 
     $$p(x)=\frac{x^{\alpha-1}*(1-x)^{\beta-1}}{B(\alpha, \beta)}$$
 
     
