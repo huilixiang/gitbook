@@ -22,6 +22,6 @@
     $$p(x)=\frac{x^{\alpha-1}*(1-x)^{\beta-1}}{B(\alpha, \beta)}$$ <br/>
     $$p(q=x|s,f) = \frac{p(s,f|q=x)*p(x)}{\int p(s,f|q=x)*p(x)dx}$$  <br/>
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$$ = \frac{\binom{s+f}{s}x^{s+\alpha-1}*(1-x)^{f+\beta-1}/B(\alpha, \beta)}{\int_{y=0}^{1}((\binom{s+f}{s}y^{s+\alpha-1}*(1-y)^{f+\beta-1}/B(\alpha, \beta)))dy} $$ <br/>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$$ = $$
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$$ = \frac{x^{s+\alpha-1}(1-x)^{f+\beta-1}}{B(s+\alpha-1, f+\beta-1)}$$
 
     
