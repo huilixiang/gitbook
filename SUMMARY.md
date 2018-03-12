@@ -12,6 +12,7 @@
   * [evaluating machine learning models](LML/evaluating-machine-learning-models.md)
   * [deep sparse rectifier neural networks](LML/deep-sparse-rectifier-neural-networks.md)
   * [deep belief nets](LML/deep-belief-networks.md)
+  * [bayesian](LML/bayesian.md)
 * [ML分享](MLP/README.md)
   * [线性模型](MLP/linear_model.md)
   * [feature engineering](MLP/feature-engineering.md)
