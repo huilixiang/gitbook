@@ -14,6 +14,7 @@
   * [deep sparse rectifier neural networks](LML/deep-sparse-rectifier-neural-networks.md)
   * [deep belief nets](LML/deep-belief-networks.md)
   * [bayesian](LML/bayesian.md)
+  * [word representations in vector space](LML/word-representations-in-vector-space.md)
 * [ML分享](MLP/README.md)
   * [线性模型](MLP/linear_model.md)
   * [feature engineering](MLP/feature-engineering.md)
