@@ -23,4 +23,5 @@
   * [feature engineering](MLP/feature-engineering.md)
   * [VC维](vcwei.md)
 * [日常工作](routine/README.md)
+* [python备忘](pythonbei-wang.md)
 
