@@ -9,6 +9,7 @@
   * [笔记](MLYearning/notes.md)
 * [ML拾遗](LML/README.md)
   * [抽样分布](LML/sample_dist.md)
+  * [binning method](LML/binning-method.md)
   * [gradient booting machine](LML/gradient-booting-machine.md)
   * [概率统计](gai-lv-tong-ji.md)
   * [模型评估](LML/mo-xing-ping-gu.md)
