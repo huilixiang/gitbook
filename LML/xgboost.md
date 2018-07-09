@@ -18,5 +18,8 @@
     - gbm_->PredictBatch
     
 - gbm.PredictBatch
-    - predictor->PredictBatch
+    - predictor->PredictBatch (cpu_predictor.cc or gpu_predictor.cc)
+
+- cpu_predictor.PredictBatch 
+    - 
 
