@@ -16,3 +16,7 @@
     
 - learner.predictraw
     - gbm_->PredictBatch
+    
+- gbm.PredictBatch
+    - predictor->PredictBatch
+
