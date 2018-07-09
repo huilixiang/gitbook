@@ -7,6 +7,9 @@
 - CLITrain
     - learner-> configure (learner.cc)
     - learner-> initmodel
-    - learner-> updateoneiter
+    - learner-> updateoneiter 
 
-- 
+- learner.cc -> updateoneiter 
+    - learner.PredictRaw
+    - obj_->GetGradient (ObjFunction, learner.h)
+    - gbm_->DoBoost (GradientBooster, learner.h)
