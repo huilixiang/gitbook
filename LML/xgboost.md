@@ -22,7 +22,7 @@
 
 - cpu_predictor.PredictBatch 
     - PredLoopSpecalize
-        - PredValue ## 一个样本的预估值等于每棵树所有叶子节点值的和
+        - PredValue ## 一个样本的预估值等于每棵树所有叶子节点值的和 leaf_value是关键
             - int tid = trees[i]->GetLeafIndex(*p_feats, root_index);
             - psum += (*trees[i])[tid].leaf_value()
 
