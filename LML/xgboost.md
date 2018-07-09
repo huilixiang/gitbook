@@ -21,5 +21,6 @@
     - predictor->PredictBatch (cpu_predictor.cc or gpu_predictor.cc)
 
 - cpu_predictor.PredictBatch 
+    - PredLoopSpecalize
     - 
 
