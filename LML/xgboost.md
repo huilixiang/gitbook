@@ -22,5 +22,7 @@
 
 - cpu_predictor.PredictBatch 
     - PredLoopSpecalize
-    - 
+        - PredValue 
+            - int tid = trees[i]->GetLeafIndex(*p_feats, root_index);
+            - psum += (*trees[i])[tid].leaf_value()
 
