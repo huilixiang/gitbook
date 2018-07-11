@@ -28,9 +28,9 @@
             
             
 - regression_obj.cc 如何计算一阶、二阶梯度
-    - LinearSquareLoss::PredTransform
-    - LogisticRaw::PredTransform
-    - LogisticRegression::PredTransform
+    - LinearSquareLoss::PredTransform return x
+    - LogisticRaw::PredTransform  return x
+    - LogisticRegression::PredTransform return common::Sigmoid(x)
 
 
 
