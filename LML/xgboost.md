@@ -26,5 +26,11 @@
             - int tid = trees[i]->GetLeafIndex(*p_feats, root_index);
             - psum += (*trees[i])[tid].leaf_value() ## 通过set_leaf方法设置
             
-- 
+            
+- regression_obj.cc 如何计算一阶、二阶梯度
+    - LinearSquareLoss::PredTransform
+    - LogisticRaw::PredTransform
+    - LogisticRegression::PredTransform
+
+
 
