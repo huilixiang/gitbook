@@ -27,13 +27,19 @@
             - psum += (*trees[i])[tid].leaf_value() ## 通过set_leaf方法设置
             
             
-- regression_obj.cc 如何计算一阶、二阶梯度
+- regression_obj.cc 如何计算一阶、二阶梯度  
+    LogisticClassification 继承LogisticRegression
     - 预估值变换
         - LinearSquareLoss::PredTransform return x
         - LogisticRaw::PredTransform  return x
         - LogisticRegression::PredTransform return common::Sigmoid(x)
     - 调整权重
-        - w += y * (scale * w - w);
+        - w += y * (scale * w - w); ###scale样本权重， y:label
+    - 一阶导
+        - LinearSquareLoss::FirstOrderGradient   return predt - label
+        - LogisticRaw::FirstOrderGradient   predt = common::Sigmoid(predt);return fmaxf(predt * (1.0f - predt), eps);
+        - LogisticRegression::FirstOrderGradient   return predt - label;
+    - 二阶导
 
 
 
