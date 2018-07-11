@@ -28,7 +28,6 @@
             
             
 - regression_obj.cc 如何计算一阶、二阶梯度  
-
     LogisticClassification 继承LogisticRegression
     - 预估值变换
         - LinearSquareLoss::PredTransform return x
