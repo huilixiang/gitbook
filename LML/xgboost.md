@@ -37,12 +37,13 @@
         - w += y * (scale * w - w); ###scale样本权重， y:label
     - 一阶导
         - LinearSquareLoss::FirstOrderGradient   return predt - label
-        - LogisticRaw::FirstOrderGradient   predt = common::Sigmoid(predt);return fmaxf(predt * (1.0f - predt), eps);
+        - LogisticRaw::FirstOrderGradient   predt = common::Sigmoid(predt);return predt - label;
         - LogisticRegression::FirstOrderGradient   return predt - label;
     - 二阶导
         - LinearSquareLoss::SecondOrderGradient  return 1.0
-        - LogisticRaw::PredTransform return x
-        - LogisticRegression::PredTransform return common::Sigmoid(x)
+        - LogisticRaw::SecondOrderGradient  redt = common::Sigmoid(predt);return fmaxf(predt * (1.0f - predt), eps);
+
+        - LogisticRegression::SecondOrderGradient  fmaxf(predt * (1.0f - predt), eps);
 
 
 
