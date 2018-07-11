@@ -28,7 +28,7 @@
             
             
 - regression_obj.cc 如何计算一阶、二阶梯度  
-    LogisticClassification 继承LogisticRegression
+    (LogisticClassification 继承LogisticRegression)
     - 预估值变换
         - LinearSquareLoss::PredTransform return x
         - LogisticRaw::PredTransform  return x
@@ -40,6 +40,9 @@
         - LogisticRaw::FirstOrderGradient   predt = common::Sigmoid(predt);return fmaxf(predt * (1.0f - predt), eps);
         - LogisticRegression::FirstOrderGradient   return predt - label;
     - 二阶导
+        - LinearSquareLoss::SecondOrderGradient  return 1.0
+        - LogisticRaw::PredTransform return x
+        - LogisticRegression::PredTransform return common::Sigmoid(x)
 
 
 
