@@ -40,5 +40,5 @@
 - 通过分裂后的方案来代表增益
 - O表示在一个特定的决策树节点上的数据集大小。 特征j在值d片分裂的增益，由下式代表：  
 
-    $$ V_{j|O}(d) = \frac{1}{n_{O}} (\frac{(\sum_{x_{i} \in O:x_{i,j} < d} g_{i})^2}{n^{j}_{l|O}(d)} + \frac{(\sum_{x_{i} \in O:x_{i,j} > d} g_{i})^2}{n^{j}_{r|O}(d)}) $$
+    $$ V_{j|O}(d) = \frac{1}{n_{O}} (\frac{(\sum_{x_{i} \in O:x_{i,j} \leq d} g_{i})^2}{n^{j}_{l|O}(d)} + \frac{(\sum_{x_{i} \in O:x_{i,j} > d} g_{i})^2}{n^{j}_{r|O}(d)}) $$
 
