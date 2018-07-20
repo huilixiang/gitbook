@@ -46,5 +46,5 @@
     where $$n_{O} = \sum I[x_{i} \in O], n^{j}_{l|O}(d) = \sum I[x_{i} \in O:x_{ij} \leq d] $$
 
 ###### EFB 算法推导
-- 
+- 图着色问题
 
