@@ -28,4 +28,5 @@
 ##### 特征降维
 - 减少#feature. 通过pca or projection pursuit. 这些算法依赖假设： 特征集是冗余的。但这并不总是成立
 - pre-sorted算法可以通过忽略0值特征的方式来降低training cost
-- histogram-based算法不可以： 检索分桶值， 无论特征值是否为0
+- histogram-based算法不可以： 检索分桶值， 无论特征值是否为0。 导致GBDT不能够利用数据的稀疏性
+#### Gradient-based One-Side Sampling
