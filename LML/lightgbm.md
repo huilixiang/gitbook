@@ -22,4 +22,5 @@
 
 ##### 相关工作
 - xgb实现了pre-sorted 和 histogram-based algorithm
-- 
+- 减少#data的通用做法就是down sampling.  例如： 丢弃权重小于阈值的样本。
+- 但是gbdt里面样本没有初始权重（疑问：其它的算法为什么会有呢？）
