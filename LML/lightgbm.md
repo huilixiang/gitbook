@@ -44,5 +44,7 @@
     $$ V_{j|O}(d) = \frac{1}{n_{O}} (\frac{(\sum_{x_{i} \in O:x_{i,j} \leq d} g_{i})^2}{n^{j}_{l|O}(d)} + \frac{(\sum_{x_{i} \in O:x_{i,j} \gt d} g_{i})^2}{n^{j}_{r|O}(d)}) $$
     
     where $$n_{O} = \sum I[x_{i} \in O], n^{j}_{l|O}(d) = \sum I[x_{i} \in O:x_{ij} \leq d] $$
+
+###### EFB 算法推导
 - 
 
