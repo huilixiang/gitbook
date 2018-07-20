@@ -24,3 +24,4 @@
 - xgb实现了pre-sorted 和 histogram-based algorithm
 - 减少#data的通用做法就是down sampling.  例如： 丢弃权重小于阈值的样本。
 - 但是gbdt里面样本没有初始权重（疑问：其它的算法为什么会有呢？）
+- 减少#feature. 通过pca or projection pursuit. 这些算法依赖假设： 特征集是冗余的。但这并不总是成立
