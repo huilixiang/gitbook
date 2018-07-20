@@ -30,3 +30,6 @@
 - pre-sorted算法可以通过忽略0值特征的方式来降低training cost
 - histogram-based算法不可以： 检索分桶值， 无论特征值是否为0。 导致GBDT不能够利用数据的稀疏性
 #### Gradient-based One-Side Sampling
+##### 算法描述
+- adaboost, 样本权重是一个很好的数据实例重要性指标， 而GBDT没有native的样本权重，所以不能使用adaboost的采样方法
+- gbdt中每个样本的梯度为样本采样提升了有用的信息
