@@ -16,7 +16,10 @@
 
 #### Preliminaries
 ##### GBDT 复杂度分解
-- 穷举法
+- pre-sorted algorithm 穷举法
 - 基于直方图的分裂方法。 时间复杂度： 直方图构建：O(#data * #feature), 分裂点查找： O(#bin *　#feature).
 - 降低复杂度的方向： 减少 #data #feature
- 
+
+##### 相关工作
+- xgb实现了pre-sorted 和 histogram-based algorithm
+- 
