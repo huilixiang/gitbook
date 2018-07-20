@@ -13,6 +13,7 @@
   * [binning method](LML/binning-method.md)
   * [gradient booting machine](LML/gradient-booting-machine.md)
   * [概率统计](gai-lv-tong-ji.md)
+  * [lightGBM](LML/lightgbm.md)
   * [模型评估](LML/mo-xing-ping-gu.md)
   * [evaluating machine learning models](LML/evaluating-machine-learning-models.md)
   * [sparse coding](LML/sparse-coding.md)
