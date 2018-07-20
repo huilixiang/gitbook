@@ -33,3 +33,5 @@
 ##### 算法描述
 - adaboost, 样本权重是一个很好的数据实例重要性指标， 而GBDT没有native的样本权重，所以不能使用adaboost的采样方法
 - gbdt中每个样本的梯度为样本采样提升了有用的信息
+- 保留所有large梯度的样本 并且  在sample gradients中随机采样
+- 根据梯度的绝对值排序， 取top a%的样本，然后从剩下的样本中随机采样b%. 然后在计算增益的时候放大sample gradients的权重，系数为： (1 - a ) / b
