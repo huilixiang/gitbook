@@ -27,3 +27,5 @@
 - 但是gbdt里面样本没有初始权重（疑问：其它的算法为什么会有呢？）
 ##### 特征降维
 - 减少#feature. 通过pca or projection pursuit. 这些算法依赖假设： 特征集是冗余的。但这并不总是成立
+- pre-sorted算法可以通过忽略0值特征的方式来降低training cost
+- histogram-based算法不可以： 检索分桶值， 无论特征值是否为0
