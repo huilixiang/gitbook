@@ -7,4 +7,5 @@
 
 ### systematic pattern and random noise
 ### 常见的两个序列模式： trend and seasonality
+smoothing 用于趋势分析。 autorelation用于季节性序列分析
 
