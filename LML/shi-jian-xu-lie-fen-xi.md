@@ -6,4 +6,5 @@
 目的： 1） 从观测序列中识别现象的本质 2）预测
 
 ### systematic pattern and random noise
+### 常见的两个序列模式： trend and seasonality
 
