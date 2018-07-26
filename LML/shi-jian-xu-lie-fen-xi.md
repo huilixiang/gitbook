@@ -1,4 +1,4 @@
 ## 时间序列分析
 ### 概述
-常用的技术：平滑、曲线拟合、自相关性（曲线自身的重复模式）
-常见
+常用的技术：smoothing、curve fitting、autorelation（曲线自身的重复模式）
+常见的模型：autoregressive, moving average model
