@@ -64,13 +64,21 @@ y是定性变量-->分类， 常用逻辑回归
 ### GLM 三要素
 - Random Component  ， 响应变量y的概率分布。 正态分布对应linear regression, 二项分布对应二分类逻辑回归，Also called a noise model or error model.  How is random error added to the prediction that comes out of the link function? 这个是重点。。没太明白
 - Systematic Component ， 指定模型中的指数变量即预测变量x的类型
-- Link Function， 定义random component和systematic component 的link, 即：响应变量的期望与预测变量的关系。 线性回归： $$ \eta = g(E(y_{i})) = E(y_i) $$. LR: $$\eta = logit(\pi)$$
+- Link Function， 定义random component和systematic component 的link, 即：响应变量的期望与预测变量的关系。 线性回归： $$ \eta = g(E(y_{i})) = E(y_i) g为identity function. 函数的返回值等于输入 $$. LR: $$\eta = logit(\pi)$$
+
 
 ### GLM 假设
 - $$y_1, y_2,...,y_n$$是独立同分布的
-
+- $$y_i$$ 不一定是正态分布的， 但必须是指数分布族中的一个（二项分布、泊松分布、多项分布、正态分布...）
+- 因变量和自变量之间的关系不需要是线性的。但是变换后的响应变量必须与预测变量是线性相关的
+- 自变量可以是原自变量的指数形式或其它非线性形式
+- 不必满足同方差性。
+- 误差不必是正态分布但必须相互独立
+- 使用MLE而不是OLS 估计参数， 因此需要大规模样本
+- 
 - y与x之间的非线性关系
   $$ g(y) = \varphi(X) + \epsilon  $$ 
+  
 
 
 
