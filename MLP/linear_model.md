@@ -66,6 +66,9 @@ y是定性变量-->分类， 常用逻辑回归
 - Systematic Component ， 指定模型中的指数变量即预测变量x的类型
 - Link Function， 定义random component和systematic component 的link, 即：响应变量的期望与预测变量的关系。 线性回归： $$ \eta = g(E(y_{i})) = E(y_i) $$. LR: $$\eta = logit(\pi)$$
 
+### GLM 假设
+- $$y_1, y_2,...,y_n$$是独立同分布的
+
 - y与x之间的非线性关系
   $$ g(y) = \varphi(X) + \epsilon  $$ 
 
