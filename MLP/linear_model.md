@@ -58,6 +58,7 @@ y是定性变量-->分类， 常用逻辑回归
 - 当 $$ i \sim Bernoulli(p) $$ 时， 极大似然的负对数与cross entropy 损失一致
 
 ### 广义线性模型<span id="glm"></span>
+- 预测变量服从期望为u的指数分布， u一般是$$ \beta^{T}x的非线性函数 $$
 - y与x之间的非线性关系
   $$ g(y) = \varphi(X) + \epsilon  $$ 
 
