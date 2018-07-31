@@ -75,9 +75,15 @@ y是定性变量-->分类， 常用逻辑回归
 - 不必满足同方差性。
 - 误差不必是正态分布但必须相互独立
 - 使用MLE而不是OLS 估计参数， 因此需要大规模样本
+- Goodness-of-fit measures rely on sufficiently large samples, where a heuristic rule is that not more than 20% of the expected cells counts are less than 5. 没看懂
+
+### GLMs相比传统回归的优势
+- 不要将响应变量变换成正态分布的
+- link function 与 random component是分开的，可以灵活建模
+- 如果link function可以产生可加性效应，那么就不需要constant variance
 - 
-- y与x之间的非线性关系
-  $$ g(y) = \varphi(X) + \epsilon  $$ 
+
+
   
 
 
