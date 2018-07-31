@@ -62,7 +62,9 @@ y是定性变量-->分类， 常用逻辑回归
 - u一般是$$ \beta^{T}x的非线性函数 $$， 故有些人称其为非线性模型。但GLIM的提出者认为其是线性的，因为预测变量只能通过线性组合来影响Y的分布
 
 ### GLM 三要素
-- Random Component  ， 响应变量y的概率分布
+- Random Component  ， 响应变量y的概率分布。 正态分布对应linear regression, 二项分布对应二分类逻辑回归，Also called a noise model or error model.  How is random error added to the prediction that comes out of the link function? 这个是重点。。没太明白
+- Systematic Component ， 指定模型中的指数变量即预测变量x的类型
+- Link Function， 定义random component和systematic component 的link, 即：响应变量的期望与预测变量的关系。 线性回归： $$ \eta = g(E(y_{i})) = E(y_i) $$
 
 - y与x之间的非线性关系
   $$ g(y) = \varphi(X) + \epsilon  $$ 
