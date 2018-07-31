@@ -62,7 +62,7 @@ y是定性变量-->分类， 常用逻辑回归
 - u一般是$$ \beta^{T}x的非线性函数 $$， 故有些人称其为非线性模型。但GLIM的提出者认为其是线性的，因为预测变量只能通过线性组合来影响Y的分布
 
 ### GLM 三要素
-- Random Component  ， 响应变量y的分布
+- Random Component  ， 响应变量y的概率分布
 
 - y与x之间的非线性关系
   $$ g(y) = \varphi(X) + \epsilon  $$ 
