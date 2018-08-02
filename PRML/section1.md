@@ -8,4 +8,5 @@
 - 概率密度： 如果一个实值变量x落在区间(x, $$x + \delta x$$)的概率由p(x)$$\delta x$$给出， 那么p(x)叫做x的概率密度函数
 - 实值变量x及其pdf: $$p_x(x)$$, 如果存在一个非线性变换：x = g(y), 且变量y及其pdf为： $$p_y(y)$$,  <br/>  
   则函数$$f(x) = f(g(y))$$ . 关于很小的$$\delta x$$, 落在(x, x+$$\delta x$$)区间的观测会被变换到区间(y, $$y + \delta y$$)内。其中$$p_x(x)\delta x \simeq p_y(y) \delta y$$   因此<br/> 
-  
+  $$p_y(y) = p_x(x) \left | \frac{dx}{dy}\right | = p_x(g(y)) \left | g'(y)\right |$$
+- 
