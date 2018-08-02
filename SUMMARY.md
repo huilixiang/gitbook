@@ -5,6 +5,7 @@
   * [第一节](SI/section1.md)
   * [数理统计](shu-ju-tong-ji.md)
 * [机器学习与模型识别](PRML/README.md)
+  * [绪论](PRML/section1.md)
 * [machine learning yearning](MLYearning/README.md)
   * [笔记](MLYearning/notes.md)
 * [ML拾遗](LML/README.md)
