@@ -9,4 +9,7 @@
 - 实值变量x及其pdf: $$p_x(x)$$, 如果存在一个非线性变换：x = g(y), 且变量y及其pdf为： $$p_y(y)$$,  <br/>  
   则函数$$f(x) = f(g(y))$$ . 关于很小的$$\delta x$$, 落在(x, x+$$\delta x$$)区间的观测会被变换到区间(y, $$y + \delta y$$)内。其中$$p_x(x)\delta x \simeq p_y(y) \delta y$$   因此<br/> 
   $$p_y(y) = p_x(x) \left | \frac{dx}{dy}\right | = p_x(g(y)) \left | g'(y)\right |$$
+- 概率的乘积、加和规则以及贝叶斯规则适用于pdf
+
+#### 期望与协方差
 - 
