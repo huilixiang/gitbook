@@ -21,5 +21,5 @@
   $$n! \approx \sqrt{2 \pi n } e^{-n} n^{n}  $$ <br/>
   $$C^k_n = \frac{n!}{k!(n-k)!}  \approx \frac{\sqrt{2 \pi n } e^{-n} n^{n}}{\sqrt{2 \pi k } e^{-k} k^{k} * \sqrt{2 \pi (n-k) } e^{-(n-k)} (n-k)^{n-k}} $$ <br/>
     $$ = \frac{1}{\sqrt{2\pi n\frac{k}{n} \frac{n-k}{n}}} * \frac{1}{(\frac{k}{n})^k*(\frac{n-k}{n})^{(n-k)}} $$  令 $$\hat{p} = \frac{k}{n}$$ <br/>
-    $$ = \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}}  $$
+    $$ = \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * \frac{1}{\hat{p}^k * (1 - \hat{p})^{n-k}} $$
   
