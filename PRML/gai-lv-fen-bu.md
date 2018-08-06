@@ -30,6 +30,12 @@
   $$\frac{\partial H(x)}{x} = ln\frac{x}{p} - ln\frac{1-x}{1-p}$$ <br/>
   $$\frac{\partial^2 H(x)}{x^2} = \frac{1}{x} + \frac{1}{1-x}$$ <br/> 
   $$\frac{\partial^3 H(x)}{x^3} = -\frac{1}{x^2} + \frac{1}{(1-x)^2}$$ <br/> 
+  $$ H(\hat{p}) = H(p) + {H}'(p)[\hat(p) - p] + \frac{1}{2}{H}''(p)[\hat{p} - p]^2 + \frac{1}{6}{H}'''(p)[\hat{p} - p]^3 $$ <br/>
+  $$ = \frac{1}{2}(\frac{1}{p} + \frac{1}{q}) + O|\hat{p} -p|^3$$ <br/>
+  
+  所以：
+  $$B(n, p, k)= \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * exp\{-\frac{n}{2pq}(\hat{p} - p)^2 + O|\hat{p} -p|^3\} = \frac{1}{\sqrt{2\pi n pq}} * exp\{\} $$
+  
 
 
   
