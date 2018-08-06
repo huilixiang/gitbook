@@ -20,4 +20,5 @@
 - 从二项分布到正态分布推导： <br/>
   $$n! \approx \sqrt{2 \pi n } e^{-n} n^{n}  $$ <br/>
   $$C^k_n = \frac{n!}{k!(n-k)!} \approx \frac{\sqrt{2 \pi n } e^{-n} n^{n}}{\sqrt{2 \pi k } e^{-k} k^{k} * \sqrt{2 \pi (n-k) } e^{-(n-k)} (n-k)^{n-k}} $$ <br/>
+    $$ = \frac{1}{}$$
   
