@@ -34,7 +34,7 @@
   $$ = \frac{1}{2}(\frac{1}{p} + \frac{1}{q}) + O|\hat{p} -p|^3$$ <br/>
   
   所以：
-  $$B(n, p, k)= \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * exp\{-\frac{n}{2pq}(\hat{p} - p)^2 + O|\hat{p} -p|^3\} = \frac{1}{\sqrt{2\pi n pq}} * exp\{\} $$
+  $$B(n, p, k)= \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * exp\{-\frac{n}{2pq}(\hat{p} - p)^2 + O|\hat{p} -p|^3\} = \frac{1}{\sqrt{2\pi n pq}} * exp\{\frac{-(k - np)^2}{2npq}\} $$
   
 
 
