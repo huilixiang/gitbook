@@ -22,4 +22,12 @@
   $$C^k_n = \frac{n!}{k!(n-k)!}  \approx \frac{\sqrt{2 \pi n } e^{-n} n^{n}}{\sqrt{2 \pi k } e^{-k} k^{k} * \sqrt{2 \pi (n-k) } e^{-(n-k)} (n-k)^{n-k}} $$ <br/>
     $$ = \frac{1}{\sqrt{2\pi n\frac{k}{n} \frac{n-k}{n}}} * \frac{1}{(\frac{k}{n})^k*(\frac{n-k}{n})^{(n-k)}} $$  令 $$\hat{p} = \frac{k}{n}$$ <br/>
     $$ = \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * \frac{1}{\hat{p}^k * (1 - \hat{p})^{n-k}} $$
+    
+  $$B(n, p, k) = C^k_np^k(1-p)^{n-k} \approx \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * \frac{1}{\hat{p}^k * (1 - \hat{p})^{n-k}} * p^k(1-p)^{n-k} $$ <br/>
+  $$ = \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * (\frac{p}{\hat{p}})^k * (\frac{1-p}{1-\hat{p}})^{n-k} = \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * exp\{kln\frac{p}{\hat{p}} + (n-k)ln\frac{1-p}{1-\hat{p}}\}$$ </br>
+  $$ = \frac{1}{\sqrt{2\pi n \hat{p} (1 - \hat{p})}} * exp\{-nH(\hat{p})\}   其中H(\hat{p}) = \hat{p}ln\frac{\hat{p}}{p} + (1-p)ln\frac{1-\hat{p}}{1-p}, n \to \infty ,  p - \hat{p} = 0$$ <br/>
+  对$$H(\hat{p})进行三阶泰勒展开：$$<br/>
+  $$\frac{\partial H(x)}{x} = ln\frac{x}{p} - ln\frac{1-x}{1-p}$$ <br/>
+  $$\frac{\partial^2 H(x)}{x^2} = \frac{1}{x} + \frac{1}{1-x}$$ <br/> 
+
   
