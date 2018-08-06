@@ -38,7 +38,7 @@
   $$ = \frac{1}{\sqrt{2\pi \sigma}} * exp\{\frac{-(k - \mu)^2}{2\sigma^2}\} . 其中\sigma^2 = npq, \mu = np  $$
   
 #### 高斯分布与顺序估计
-
+- 
   
 
 
