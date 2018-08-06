@@ -19,6 +19,6 @@
 - 先验分布是某个因子与$$u^x(1-u)^{1-x}$$的乘积，我们选择一个正比于u和(1-u)的幂指数的先验概率分布，使用后验概率分布与先验有相同的形式， 这种性质叫共轭。
 - 从二项分布到正态分布推导： <br/>
   $$n! \approx \sqrt{2 \pi n } e^{-n} n^{n}  $$ <br/>
-  $$C^k_n = \frac{n!}{k!(n-k)!} \approx \frac{\sqrt{2 \pi n } e^{-n} n^{n}}{\sqrt{2 \pi k } e^{-k} k^{k} * \sqrt{2 \pi (n-k) } e^{-(n-k)} (n-k)^{n-k}} $$ <br/>
+  $$C^k_n = \frac{n!}{k!(n-k)!} \newline \approx \frac{\sqrt{2 \pi n } e^{-n} n^{n}}{\sqrt{2 \pi k } e^{-k} k^{k} * \sqrt{2 \pi (n-k) } e^{-(n-k)} (n-k)^{n-k}} $$ <br/>
     $$ = \frac{1}{}$$
   
