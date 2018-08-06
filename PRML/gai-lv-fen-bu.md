@@ -29,5 +29,7 @@
   对$$H(\hat{p})进行三阶泰勒展开：$$<br/>
   $$\frac{\partial H(x)}{x} = ln\frac{x}{p} - ln\frac{1-x}{1-p}$$ <br/>
   $$\frac{\partial^2 H(x)}{x^2} = \frac{1}{x} + \frac{1}{1-x}$$ <br/> 
+  $$\frac{\partial^3 H(x)}{x^3} = -\frac{1}{x^2} + \frac{1}{(1-x)^2}$$ <br/> 
+
 
   
