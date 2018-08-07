@@ -7,6 +7,7 @@
 * [机器学习与模型识别](PRML/README.md)
   * [绪论](PRML/section1.md)
   * [概率分布](PRML/gai-lv-fen-bu.md)
+  * [线性回归模型](PRML/xian-xing-hui-gui-mo-xing.md)
 * [machine learning yearning](MLYearning/README.md)
   * [笔记](MLYearning/notes.md)
 * [ML拾遗](LML/README.md)
