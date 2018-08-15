@@ -1,0 +1,766 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>抽样分布 · 工作笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="huajie">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="shi-jian-xu-lie-fen-xi.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SI/">
+            
+                <a href="../SI/">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    统计推断
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../SI/section1.html">
+            
+                <a href="../SI/section1.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    第一节
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../shu-ju-tong-ji.html">
+            
+                <a href="../shu-ju-tong-ji.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    数理统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../PRML/">
+            
+                <a href="../PRML/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    机器学习与模型识别
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../PRML/section1.html">
+            
+                <a href="../PRML/section1.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    绪论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../PRML/gai-lv-fen-bu.html">
+            
+                <a href="../PRML/gai-lv-fen-bu.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    概率分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../PRML/xian-xing-hui-gui-mo-xing.html">
+            
+                <a href="../PRML/xian-xing-hui-gui-mo-xing.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    线性回归模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../MLYearning/">
+            
+                <a href="../MLYearning/">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    machine learning yearning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../MLYearning/notes.html">
+            
+                <a href="../MLYearning/notes.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    ML拾遗
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="sample_dist.html">
+            
+                <a href="sample_dist.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    抽样分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="shi-jian-xu-lie-fen-xi.html">
+            
+                <a href="shi-jian-xu-lie-fen-xi.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    时间序列分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="xgboost.html">
+            
+                <a href="xgboost.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    xgboost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="binning-method.html">
+            
+                <a href="binning-method.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    binning method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="gradient-booting-machine.html">
+            
+                <a href="gradient-booting-machine.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    gradient booting machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../gai-lv-tong-ji.html">
+            
+                <a href="../gai-lv-tong-ji.html">
+            
+                    
+                        <b>1.5.6.</b>
+                    
+                    概率统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="lightgbm.html">
+            
+                <a href="lightgbm.html">
+            
+                    
+                        <b>1.5.7.</b>
+                    
+                    lightGBM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="mo-xing-ping-gu.html">
+            
+                <a href="mo-xing-ping-gu.html">
+            
+                    
+                        <b>1.5.8.</b>
+                    
+                    模型评估
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="evaluating-machine-learning-models.html">
+            
+                <a href="evaluating-machine-learning-models.html">
+            
+                    
+                        <b>1.5.9.</b>
+                    
+                    evaluating machine learning models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="sparse-coding.html">
+            
+                <a href="sparse-coding.html">
+            
+                    
+                        <b>1.5.10.</b>
+                    
+                    sparse coding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="deep-sparse-rectifier-neural-networks.html">
+            
+                <a href="deep-sparse-rectifier-neural-networks.html">
+            
+                    
+                        <b>1.5.11.</b>
+                    
+                    deep sparse rectifier neural networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="deep-belief-networks.html">
+            
+                <a href="deep-belief-networks.html">
+            
+                    
+                        <b>1.5.12.</b>
+                    
+                    deep belief nets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="bayesian.html">
+            
+                <a href="bayesian.html">
+            
+                    
+                        <b>1.5.13.</b>
+                    
+                    bayesian
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="word-representations-in-vector-space.html">
+            
+                <a href="word-representations-in-vector-space.html">
+            
+                    
+                        <b>1.5.14.</b>
+                    
+                    word representations in vector space
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../MLP/">
+            
+                <a href="../MLP/">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    ML分享
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../MLP/linear_model.html">
+            
+                <a href="../MLP/linear_model.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    线性模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../MLP/feature-engineering.html">
+            
+                <a href="../MLP/feature-engineering.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    feature engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../vcwei.html">
+            
+                <a href="../vcwei.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    VC维
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../routine/">
+            
+                <a href="../routine/">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    日常工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../pythonbei-wang.html">
+            
+                <a href="../pythonbei-wang.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    python备忘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../c++/README.md">
+            
+                <span>
+            
+                    
+                        <b>1.9.</b>
+                    
+                    c++
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >抽样分布</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x62BD;&#x6837;&#x5206;&#x5E03;">&#x62BD;&#x6837;&#x5206;&#x5E03;</h2>
+<p>&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5F97;&#x5230;&#x67D0;&#x603B;&#x4F53;&#x7279;&#x5F81;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F46;&#x5BF9;&#x603B;&#x4F53;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x5EA6;&#x91CF;&#x662F;&#x4E0D;&#x884C;&#x7684;&#xFF0C; &#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4F1A;&#x8FDB;&#x884C;&#x968F;&#x673A;&#x62BD;&#x6837;&#x3002;&#x7528;&#x6837;&#x672C;&#x7684;&#x7279;&#x5F81;&#x6765;&#x6982;&#x62EC;&#x603B;&#x4F53;&#x7684;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<p>&#x53C2;&#x6570;&#x662F;&#x6574;&#x4E2A;&#x603B;&#x4F53;&#x7684;&#x63CF;&#x8FF0;&#x6027;&#x5EA6;&#x91CF;&#xFF0C;&#x662F;&#x56FA;&#x5B9A;&#x5E38;&#x91CF;&#xFF0C;&#x4F46;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x672A;&#x77E5;&#x7684;---&#x4E0D;&#x80FD;&#x5BF9;&#x6574;&#x4F53;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x5EA6;&#x91CF;</p>
+<h3 id="&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x503C;">&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x503C;</h3>
+<p>&#x56E0;&#x4E3A;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5BF9;&#x603B;&#x4F53;&#x8FDB;&#x884C;&#x5EA6;&#x91CF;&#xFF0C;&#x6545;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x4ECE;&#x603B;&#x4F53;&#x4E2D;&#x968F;&#x673A;&#x62BD;&#x6837;&#x6765;&#x83B7;&#x53D6;&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x503C;&#xFF1A;&#x5373;&#x6837;&#x672C;&#x7EDF;&#x8BA1;&#x91CF;&#x3002; &#x6709;&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x503C;&#xFF0C;&#x5FC5;&#x987B;&#x5F97;&#x5173;&#x8054;&#x4F30;&#x8BA1;&#x8BEF;&#x5DEE;</p>
+<h3 id="&#x70B9;&#x4F30;&#x8BA1;&#x4E0E;&#x533A;&#x95F4;&#x4F30;&#x8BA1;">&#x70B9;&#x4F30;&#x8BA1;&#x4E0E;&#x533A;&#x95F4;&#x4F30;&#x8BA1;</h3>
+<p>&#x70B9;&#x4F30;&#x8BA1;&#x662F;&#x53C2;&#x6570;&#x7684;&#x5355;&#x4E00;&#x6700;&#x53EF;&#x80FD;&#x503C;&#xFF0C;&#x7F6E;&#x4FE1;&#x533A;&#x95F4;&#x662F;&#x53C2;&#x6570;&#x7684;&#x503C;&#x8303;&#x56F4;</p>
+<h3 id="&#x91C7;&#x6837;&#x5206;&#x5E03;">&#x91C7;&#x6837;&#x5206;&#x5E03;</h3>
+<p>&#x91C7;&#x6837;&#x5206;&#x5E03;&#x662F;&#x7ED9;&#x5B9A;&#x7EDF;&#x8BA1;&#x91CF;&#x7684;&#x6982;&#x7387;&#x5206;&#x5E03;&#x3002;&#x6BD4;&#x5982;&#x5747;&#x503C;&#x3002;</p>
+<h2 id="&#x5047;&#x8BBE;&#x68C0;&#x9A8C;">&#x5047;&#x8BBE;&#x68C0;&#x9A8C;</h2>
+<h3 id="students-t-distribution">Student`s T-distribution</h3>
+<p>&#x7528;&#x4E8E;&#x6839;&#x636E;&#x5C0F;&#x6837;&#x672C;&#x6765;&#x4F30;&#x8BA1;&#x5448;&#x6B63;&#x6001;&#x5206;&#x5E03;&#x4E14;&#x65B9;&#x5DEE;&#x672A;&#x77E5;&#x7684;&#x603B;&#x4F53;&#x7684;&#x5747;&#x503C;.&#x5982;&#x679C;&#x603B;&#x4F53;&#x65B9;&#x5DEE;&#x5DF2;&#x77E5;&#xFF08;&#x4F8B;&#x5982;&#x5728;&#x6837;&#x672C;&#x6570;&#x91CF;&#x8DB3;&#x591F;&#x591A;&#x65F6;&#xFF09;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x7528;&#x6B63;&#x6001;&#x5206;&#x5E03;&#x6765;&#x4F30;&#x8BA1;&#x603B;&#x4F53;&#x5747;&#x503C;&#x3002;</p>
+<h3 id="chi-square-distribution">chi-square distribution</h3>
+<p>k&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x6807;&#x51C6;&#x6B63;&#x6001;&#x5206;&#x5E03;&#x53D8;&#x91CF;&#x7684;&#x5E73;&#x65B9;&#x548C;&#x670D;&#x4ECE;&#x81EA;&#x7531;&#x5EA6;&#x4E3A;k&#x7684;&#x5361;&#x65B9;&#x5206;&#x5E03;.&#x5361;&#x65B9;&#x5206;&#x5E03;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x4F3D;&#x739B;&#x5206;&#x5E03;&#xFF0C;&#x662F;&#x7EDF;&#x8BA1;&#x63A8;&#x65AD;&#x4E2D;&#x5E94;&#x7528;&#x6700;&#x4E3A;&#x5E7F;&#x6CDB;&#x7684;&#x6982;&#x7387;&#x5206;&#x5E03;&#x4E4B;&#x4E00;&#xFF0C;&#x4F8B;&#x5982;&#x5047;&#x8BBE;&#x68C0;&#x9A8C;&#x548C;&#x7F6E;&#x4FE1;&#x533A;&#x95F4;&#x7684;&#x8BA1;&#x7B97;</p>
+<h3 id="t-test">T-test</h3>
+<ul>
+<li>&#x89C2;&#x6D4B;&#x503C;&#x72EC;&#x7ACB;</li>
+<li>&#x6B63;&#x592A;&#x5206;&#x5E03;</li>
+<li>&#x65B9;&#x5DEE;&#x672A;&#x77E5;</li>
+<li>&#x5C0F;&#x6837;&#x672C;&#xFF08;&#x5426;&#x5219;z-test&#xFF09;</li>
+<li>&#x8FDE;&#x7EED;&#x53D8;&#x91CF;</li>
+<li>&#x5747;&#x503C;&#x5DEE;&#x5F02; &amp; &#x6982;&#x7387;  <h3 id="t-test&#x5E94;&#x7528;">T-test&#x5E94;&#x7528;</h3>
+</li>
+<li>&#x5355;&#x6837;&#x672C;t&#x68C0;&#x9A8C;&#xFF1A;&#x67D0;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x6837;&#x672C;&#x5747;&#x6570;&#x4E0E;&#x7ED9;&#x5B9A;&#x603B;&#x4F53;&#x7684;&#x5DF2;&#x77E5;&#x5747;&#x6570;&#x76F8;&#x6BD4;&#xFF0C;&#x5176;&#x5DEE;&#x5F02;&#x662F;&#x5426;&#x6709;&#x610F;&#x4E49;  </li>
+<li>&#x975E;&#x914D;&#x5BF9;&#x6216;&#x72EC;&#x7ACB;t&#x68C0;&#x9A8C;&#xFF1A;&#x68C0;&#x9A8C;&#x7531;&#x4E24;&#x4E2A;&#x72EC;&#x7ACB;&#x6837;&#x672C;&#x4F30;&#x8BA1;&#x7684;&#x603B;&#x4F53;&#x5747;&#x6570;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x662F;&#x5426;&#x6709;&#x610F;&#x4E49;&#xFF08;&#x5982;&#x7537;&#x6027;&#x7FA4;&#x4F53;&#x548C;&#x5973;&#x6027;&#x7FA4;&#x4F53;&#xFF09;</li>
+<li>&#x914D;&#x5BF9;t&#x68C0;&#x9A8C;&#xFF1A;&#x68C0;&#x9A8C;&#x7531;&#x76F8;&#x5173;&#x6837;&#x672C;&#x4F30;&#x8BA1;&#x7684;&#x603B;&#x4F53;&#x5747;&#x6570;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x662F;&#x5426;&#x6709;&#x610F;&#x4E49;&#xFF08;&#x5982;&#x7ED9;&#x540C;&#x4E00;&#x7EC4;&#x75C5;&#x4EBA;&#x65BD;&#x52A0;&#x5904;&#x7406;&#x524D;&#x540E;&#xFF0C;&#x6D4B;&#x91CF;&#x503C;&#x7684;&#x5747;&#x6570;&#xFF09;<h3 id="chi-square-test">chi-square test</h3>
+</li>
+<li>&#x5B9A;&#x6027;&#x53D8;&#x91CF;</li>
+<li>&#x5206;&#x7C7B;&#x6570;&#x636E;</li>
+<li>&#x6570;&#x636E;&#x4EE5;&#x9891;&#x6570;&#x51FA;&#x73B0;</li>
+<li>&#x89C2;&#x6D4B;&#x6837;&#x672C;&#x91CF; &gt; 20</li>
+<li>&#x4EFB;&#x4E00;&#x7C7B;&#x522B;&#x6216;&#x5355;&#x5143;&#x683C;&#x5185;&#x7684;&#x7406;&#x8BBA;&#x9891;&#x6570;&#x5E94;&gt;5 , &#x5426;&#x5219;&#x9700;&#x8981;&#x6821;&#x6B63;</li>
+<li>&#x76F8;&#x6BD4;&#x8F83;&#x7684;&#x7EC4;&#x522B;&#x5E94;&#x5927;&#x81F4;&#x76F8;&#x4F3C;<h2 id="anova">ANOVA</h2>
+&#x7528;&#x6765;&#x63ED;&#x793A;&#x4F5C;&#x7528;&#x4E8E;&#x4E00;&#x4E2A;&#x56E0;&#x53D8;&#x91CF;&#x7684;&#x51E0;&#x4E2A;&#x5206;&#x7C7B;&#x81EA;&#x53D8;&#x91CF;&#xFF08;&#x79F0;&#x4E3A;&#x56E0;&#x7D20;&#xFF09;&#x7684;&#x4E3B;&#x6548;&#x5E94;&#x548C;&#x4EA4;&#x4E92;&#x6548;&#x5E94;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: ML拾遗">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="shi-jian-xu-lie-fen-xi.html" class="navigation navigation-next " aria-label="Next page: 时间序列分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"抽样分布","level":"1.5.1","depth":2,"next":{"title":"时间序列分析","level":"1.5.2","depth":2,"path":"LML/shi-jian-xu-lie-fen-xi.md","ref":"LML/shi-jian-xu-lie-fen-xi.md","articles":[]},"previous":{"title":"ML拾遗","level":"1.5","depth":1,"path":"LML/README.md","ref":"LML/README.md","articles":[{"title":"抽样分布","level":"1.5.1","depth":2,"path":"LML/sample_dist.md","ref":"LML/sample_dist.md","articles":[]},{"title":"时间序列分析","level":"1.5.2","depth":2,"path":"LML/shi-jian-xu-lie-fen-xi.md","ref":"LML/shi-jian-xu-lie-fen-xi.md","articles":[]},{"title":"xgboost","level":"1.5.3","depth":2,"path":"LML/xgboost.md","ref":"LML/xgboost.md","articles":[]},{"title":"binning method","level":"1.5.4","depth":2,"path":"LML/binning-method.md","ref":"LML/binning-method.md","articles":[]},{"title":"gradient booting machine","level":"1.5.5","depth":2,"path":"LML/gradient-booting-machine.md","ref":"LML/gradient-booting-machine.md","articles":[]},{"title":"概率统计","level":"1.5.6","depth":2,"path":"gai-lv-tong-ji.md","ref":"gai-lv-tong-ji.md","articles":[]},{"title":"lightGBM","level":"1.5.7","depth":2,"path":"LML/lightgbm.md","ref":"LML/lightgbm.md","articles":[]},{"title":"模型评估","level":"1.5.8","depth":2,"path":"LML/mo-xing-ping-gu.md","ref":"LML/mo-xing-ping-gu.md","articles":[]},{"title":"evaluating machine learning models","level":"1.5.9","depth":2,"path":"LML/evaluating-machine-learning-models.md","ref":"LML/evaluating-machine-learning-models.md","articles":[]},{"title":"sparse coding","level":"1.5.10","depth":2,"path":"LML/sparse-coding.md","ref":"LML/sparse-coding.md","articles":[]},{"title":"deep sparse rectifier neural networks","level":"1.5.11","depth":2,"path":"LML/deep-sparse-rectifier-neural-networks.md","ref":"LML/deep-sparse-rectifier-neural-networks.md","articles":[]},{"title":"deep belief nets","level":"1.5.12","depth":2,"path":"LML/deep-belief-networks.md","ref":"LML/deep-belief-networks.md","articles":[]},{"title":"bayesian","level":"1.5.13","depth":2,"path":"LML/bayesian.md","ref":"LML/bayesian.md","articles":[]},{"title":"word representations in vector space","level":"1.5.14","depth":2,"path":"LML/word-representations-in-vector-space.md","ref":"LML/word-representations-in-vector-space.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-mathjax"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"shortName":"gitbookuse"},"github":{"url":"https://github.com/huilixiang/gitbook"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"huilixiang/gitbook","types":["star"],"size":"small"},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"base":"https://github.com/huilixiang/gitbook/edit/master","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"huajie","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"工作笔记","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"记录工作内容及学习笔记"},"file":{"path":"LML/sample_dist.md","mtime":"2018-02-23T03:43:18.424Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-15T03:41:55.240Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
