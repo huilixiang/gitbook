@@ -96,4 +96,10 @@
    - MMD： maximum mean discrepancy 假设$$\phi$$已知， 求距离： $$$$DISTANCE(x_s, x_t) \approx ||\frac{1}{n_1}\sum_{i=1}^{n_1}\phi(x_i) - \frac{1}{n_2}\sum_{j=1}^{n_2}\phi(x_j) ||$$, 即映射后的均值之差。 
    - 把MMD平方后，有乘积项，联想SVM中的核函数，　把难求的距离变成了$$tr(KL) - \lambda tr(K)$$ tr:矩阵的迹
    - 由于该问题一个semi-definite programming. 解决起来耗时，故考虑降维。
+   
+2. 条件分布自适应
+   - 目标： 减小源域与目标域条件概率分布的距离， 来实现迁移学习。
+
+3. 联合分布自适应
+   - 目标： 减小源域与目标域的联合概率分布的距离。
 
