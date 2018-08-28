@@ -12,6 +12,7 @@
   * [笔记](MLYearning/notes.md)
 * [ML拾遗](LML/README.md)
   * [抽样分布](LML/sample_dist.md)
+  * [迁移学习](qian-yi-xue-xi.md)
   * [时间序列分析](LML/shi-jian-xu-lie-fen-xi.md)
   * [xgboost](LML/xgboost.md)
   * [binning method](LML/binning-method.md)
@@ -31,5 +32,5 @@
   * [VC维](vcwei.md)
 * [日常工作](routine/README.md)
 * [python备忘](pythonbei-wang.md)
-* [c++](c++/README.md)
+* [迁移学习](qian-yi-xue-xi.md)
 
