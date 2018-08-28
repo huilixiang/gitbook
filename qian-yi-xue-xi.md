@@ -94,5 +94,6 @@
    - 目标： 减小源域和目标域的边缘概率分布的距离，从而完成迁移学习。 $$DISTANCE(D_s, D_t) \approx ||P(x_s) - P(x_t)|| $$
    - 迁移成分分析： 直接减少二者的距离是不行的， 假设存在一个特征映射$$\phi$$, 映射后数据的分布：$$P(\phi(x_s)) \approx P(\phi(x_t))$$, 找到合适的$$\phi$$即可
    - MMD： maximum mean discrepancy 假设$$\phi$$已知， 求距离： $$$$DISTANCE(x_s, x_t) \approx ||\frac{1}{n_1}\sum_{i=1}^{n_1}\phi(x_i) - \frac{1}{n_2}\sum_{j=1}^{n_2}\phi(x_j) ||$$, 即映射后的均值之差。 
-   - 把MMD平方后，有乘积项，联想SVM中的核函数，　把难求的距离变成了$$tr(KL) - \lambda tr(K)$$
+   - 把MMD平方后，有乘积项，联想SVM中的核函数，　把难求的距离变成了$$tr(KL) - \lambda tr(K)$$ tr:矩阵的迹
+   - 
 
