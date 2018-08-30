@@ -27,6 +27,7 @@
   * [bayesian](LML/bayesian.md)
   * [word representations in vector space](LML/word-representations-in-vector-space.md)
   * [boosting for transfer learning](LML/boosting-for-transfer-learning.md)
+  * [domain adaption via transfer component analysis](LML/domain-adaption-via-transfer-component-analysis.md)
 * [ML分享](MLP/README.md)
   * [线性模型](MLP/linear_model.md)
   * [feature engineering](MLP/feature-engineering.md)
