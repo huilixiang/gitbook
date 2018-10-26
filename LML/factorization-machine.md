@@ -13,3 +13,13 @@
     - 可以对非常稀疏的数据进行参数估计， 而svm在这种情况下失败
     - 线性复杂度，可以在100M的数据场景中进行预估
     - FM是一个通用的预估算法，适用于任意的实值向量， 优于其它优秀的算法：MF， SVD++, PITF, FPMC
+    
+### FM 
+- $$ \widehat{y}(x) = w_0 + \sum_{i=1}^{n} w_{i}x_{i}  + \sum_{i=1}^{n}\sum_{j=i+1}^{n}\left \langle v_i, v_j \right \rangle x_i * x_j$$
+- 怎样奖$$O(kn^2)$$的时间复杂度降到 O(kn)
+- $$ \sum_{i=1}^{n}\sum_{j=i+1}^{n}\left \langle v_i, v_j \right \rangle x_i * x_j$$ <br/>
+   = $$\frac{1}{2}\sum_{i=1}^{n}\sum_{j=1}^{n} \left \langle v_i, v_j \right \rangle x_i * x_j - \frac{1}{2}\sum_{i=1}^{n} \left \langle v_i, v_j \right \rangle x_i * x_i $$ <br/>
+   = $$ \frac{1}{2} \left (\sum_{i=1}^{n}\sum_{j=1}^{n}\sum_{f=1}^{k} v_{if}*v_{jf}* x_i * x_j - \sum_{i=1}^{n}\sum_{f=1}^{k} v_{if}*v_{if}* x_i * x_i    \right )$$ <br/>
+   = $$ \frac{1}{2}\sum_{f=1}^{k} \left (  \left ( \sum_{i=1}^{n} v_{if}* x_i \right ) \left ( \sum_{j=1}^{n} v_{jf}* x_j \right )  - \sum_{i=1}^{n}v_{if}^2* x_i^2\right ) $$  <br/>
+   = 
+
