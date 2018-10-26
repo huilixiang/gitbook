@@ -23,4 +23,7 @@
    = $$ \frac{1}{2}\sum_{f=1}^{k} \left (  \left ( \sum_{i=1}^{n} v_{if}* x_i \right ) \left ( \sum_{j=1}^{n} v_{jf}* x_j \right )  - \sum_{i=1}^{n}v_{if}^2* x_i^2\right ) $$  <br/>
    = $$ \frac{1}{2}\sum_{f=1}^{k} \left (  \left ( \sum_{i=1}^{n} v_{if}* x_i \right )^2  - \sum_{i=1}^{n}v_{if}^2* x_i^2\right ) $$  <br/>
 
-
+### 对比：
+- svm的参数是稠密的， 每个参数需要有观测样本才能计算
+- FM 可以在线性时间内进行学习
+- FM不依赖训练数据， 而SVM需要， 支持向量。
