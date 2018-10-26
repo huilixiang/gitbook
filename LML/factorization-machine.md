@@ -21,5 +21,6 @@
    = $$\frac{1}{2}\sum_{i=1}^{n}\sum_{j=1}^{n} \left \langle v_i, v_j \right \rangle x_i * x_j - \frac{1}{2}\sum_{i=1}^{n} \left \langle v_i, v_j \right \rangle x_i * x_i $$ <br/>
    = $$ \frac{1}{2} \left (\sum_{i=1}^{n}\sum_{j=1}^{n}\sum_{f=1}^{k} v_{if}*v_{jf}* x_i * x_j - \sum_{i=1}^{n}\sum_{f=1}^{k} v_{if}*v_{if}* x_i * x_i    \right )$$ <br/>
    = $$ \frac{1}{2}\sum_{f=1}^{k} \left (  \left ( \sum_{i=1}^{n} v_{if}* x_i \right ) \left ( \sum_{j=1}^{n} v_{jf}* x_j \right )  - \sum_{i=1}^{n}v_{if}^2* x_i^2\right ) $$  <br/>
-   = 
+   = $$ \frac{1}{2}\sum_{f=1}^{k} \left (  \left ( \sum_{i=1}^{n} v_{if}* x_i \right )^2  - \sum_{i=1}^{n}v_{if}^2* x_i^2\right ) $$  <br/>
+
 
