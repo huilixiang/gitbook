@@ -35,6 +35,7 @@
   * [feature engineering](MLP/feature-engineering.md)
   * [VC维](vcwei.md)
 * [日常工作](routine/README.md)
+* [R360金额差异化](r360jin-e-cha-yi-hua.md)
 * [python备忘](pythonbei-wang.md)
-* [迁移学习](qian-yi-xue-xi.md)
+* [R360金额差异化](r360jin-e-cha-yi-hua.md)
 
