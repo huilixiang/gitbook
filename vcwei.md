@@ -9,7 +9,12 @@
 对于随机变量x, $$ a \leq x_i \leq b$$ 
 $$P[|E[X] - \frac{1}{m} \sum_{i=0}^{m} x_{i} | > \epsilon] < 2exp(\frac{-2m\epsilon^2}{(b-a)^2})$$     
 
-#### 
+#### chebyshev`s inequality
+$$P(E[f_N] - E_{N}^{*}[f_N] \geq \frac{\epsilon}{2}) \leq \frac{4var(f_N)}{N\epsilon^2}$$
+
+### the symmetrization lemma
+$$E_N 样本集， E_N^* ghost 样本集$$
+$$P(sup_{f \in F}(E(f_N) - E_N(f_N)) > \epsilon) \leq 2P(sup_{f \in F}(E_N^*(f_N) - E_N(f_N)) > \epsilon/2) $$
 
 ### 问题
 - LR这类简单的模型为什么应用广泛（暗含效果不错）
