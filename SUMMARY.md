@@ -32,6 +32,7 @@
   * [domain adaption via transfer component analysis](LML/domain-adaption-via-transfer-component-analysis.md)
 * [ML分享](MLP/README.md)
   * [线性模型](MLP/linear_model.md)
+  * [从VC维到SVM](MLP/cong-vc-wei-dao-svm.md)
   * [feature engineering](MLP/feature-engineering.md)
   * [VC维](vcwei.md)
 * [日常工作](routine/README.md)
