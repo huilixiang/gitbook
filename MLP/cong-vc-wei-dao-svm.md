@@ -60,6 +60,15 @@ $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] = 0$$
   $$\lim_{m \to \infty}P[|R(h) - R_{emp}(h)| > \epsilon] = 0$$
  看到曙光了， 还能做的更好！
  
+### Hoeffding`s inequality
+- LLN 指明了前进方向， 但没有告诉我们怎样可以快速到达
+- 集中不等式： concentration inequalities:    
+
+  $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] \leq 2exp(\frac{-2m\epsilon^2}{(b-a)^2})$$ 
+  $$ a \leq x_i \leq b $$ , 对于二分类问题， $$(b-a)^2 == 1$$
+  $$P[|R(h) - R_{emp}(h)| > \epsilon] \leq 2exp(-2m\epsilon^2)$$
+- 现在针对的是单个假设函数h, 但是学习问题开始的时候并不知道是哪个h, 我们怎样利于泛化界从整个假设空间来挑选合适的假设函数呢？
+
 
 
 
