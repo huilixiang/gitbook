@@ -59,6 +59,8 @@ $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] = 0$$
 
   $$\lim_{m \to \infty}P[|R(h) - R_{emp}(h)| > \epsilon] = 0$$
  看到曙光了， 还能做的更好！
+ 
+
 
 
 
