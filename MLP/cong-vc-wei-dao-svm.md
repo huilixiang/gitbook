@@ -58,7 +58,7 @@ $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] = 0$$
 - R(h) -- 总体均值， $$R_{emp}(h)$$ 是样本均值，那泛化误差的上确界概率：  
 
   $$\lim_{m \to \infty}P[|R(h) - R_{emp}(h)| > \epsilon] = 0$$
-看到曙光了， 还能做的更好！
+ 看到曙光了， 还能做的更好！
 
 
 
