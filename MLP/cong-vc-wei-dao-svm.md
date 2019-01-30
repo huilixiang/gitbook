@@ -69,6 +69,18 @@ $$\lim_{m \to \infty}P[|E[X] - \frac{1}{m}\sum{x_i}| > \epsilon] = 0$$
   $$P[|R(h) - R_{emp}(h)| > \epsilon] \leq 2exp(-2m\epsilon^2)$$
 - 现在针对的是单个假设函数h, 但是学习问题开始的时候并不知道是哪个h, 我们怎样利于泛化界从整个假设空间来挑选合适的假设函数呢？
 
+### 泛化界
+- 对于整个假设空间， 我们有：  
+
+  $$P[\underset{h \sim H}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq \sum_{{h}\sim{H}} P[|R(h) - R_{emp}(h)| > \epsilon] $$ 
+$$P[\underset{h \sim H}{sup}|R(h) - R_{emp}(h)| > \epsilon] \leq  2|H|exp(-2m\epsilon^2) $$
+  with confidence $$1 - \delta$$
+  $$|R(h) - R_{emp}(h)| \leq \epsilon \Rightarrow R(h) \leq R_{emp}(h) + \epsilon $$ 
+  $$R(h) \leq R_{emp}(h) + \sqrt{\frac{ln|H|+ln{\frac{2}{\delta}}}{2m}}$$ -- 第一个泛化界公式
+  泛化界与假设空间大小、数据集大小相关。 假设空间越复杂， 泛化误差的上界越大！ 
+  因此记忆模型的效果不佳可以解释为： 其泛化误差的上界趋于正无穷
+- 但是存在问题： 线性假设空间 H = ax + b, 但其假设空间的size |H| 趋于正无穷。 难道线性模型泛化误差上界与记忆模型一致？这与常识不符： 线性模型，感知机、svm应用广泛！ 这说明我们的理论露掉了某些东西！
+
 
 
 

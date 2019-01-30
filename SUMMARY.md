@@ -19,6 +19,7 @@
   * [gradient booting machine](LML/gradient-booting-machine.md)
   * [factorization machine](LML/factorization-machine.md)
   * [概率统计](gai-lv-tong-ji.md)
+  * [变分](LML/bian-fen.md)
   * [互金](LML/hu-jin.md)
   * [lightGBM](LML/lightgbm.md)
   * [模型评估](LML/mo-xing-ping-gu.md)
