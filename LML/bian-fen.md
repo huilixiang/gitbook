@@ -25,6 +25,7 @@ $$I(y) = \int_{x_1}^{x_2}Fdx$$，其中我们想要通过选择F来最大化或�
  $$\tilde{L}(\epsilon) = \tilde{L}|_{\epsilon = 0} + \frac{d\tilde{L}}{d\epsilon}.\epsilon + \frac{d^2\tilde{L}}{d^2\epsilon}.\frac{\epsilon^2}{2!} + ... = \tilde{L_{0}} + \tilde{L}_1\epsilon + \tilde{L}_2\epsilon^2+...  $$.  
 - 当$$\epsilon=0$$时， $$\tilde{L_{0}} = L$$, 代入上式： <br/>
  $$\tilde{L} - L = \tilde{L}_1\epsilon + \tilde{L}_2\epsilon^2+... $$ <br/>
- 这里我们记： $$\delta L = \tilde{L}_1\epsilon = \frac{d\tilde{L}}{d\epsilon}|_{\epsilon=0}.\epsilon   $$ 为一阶变分， $$\delta L^2 = \tilde{L}_2\epsilon^2 为二阶变分 $$
+ 这里我们记： $$\delta L = \tilde{L}_1\epsilon = \frac{d\tilde{L}}{d\epsilon}|_{\epsilon=0}.\epsilon   $$ 为一阶变分， $$\delta L^2 = \tilde{L}_2\epsilon^2 为二阶变分 $$ <br/>
+- 变分与微分的区别： 变分是上面例子中的解释是：y和$$\tilde{y}的差值，即在y轴方向上的，即同一个x, 而微分是在x轴上的差值。$$ 
 
 
