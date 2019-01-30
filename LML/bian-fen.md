@@ -22,6 +22,9 @@ $$I(y) = \int_{x_1}^{x_2}Fdx$$，其中我们想要通过选择F来最大化或�
  $$ 这样做的好处是给定一个\eta(x), 我们可以通过调整\epsilon来获取无穷多的路径，同时对于任意的\eta(x), 当\epsilon=0时， \tilde{y}(x) = y(x)$$
 - $$\tilde{L} = \int_{x_1}^{x_2}F(y+\epsilon \eta, \tilde{y}+\epsilon \tilde{\eta}; x)$$
 - 根据之前的合理假设， y(x)是一个固定的函数，对于上式， 对于给定的$$\eta(x)$$, 则$$\tilde{L}$$取决于$$\epsilon$$,  现将$$\tilde{L}$$在$$\epsilon = 0$$处进行泰勒展开：
- $$\tilde{L}(\epsilon) = \tilde{L}|_{\epsilon = 0} + \frac{d\tilde{L}}{d\epsilon}.\epsilon + \frac{d^2\tilde{L}}{d^2\epsilon}.\frac{\epsilon^2}{2!} + ... =   $$
+ $$\tilde{L}(\epsilon) = \tilde{L}|_{\epsilon = 0} + \frac{d\tilde{L}}{d\epsilon}.\epsilon + \frac{d^2\tilde{L}}{d^2\epsilon}.\frac{\epsilon^2}{2!} + ... = \tilde{L_{0}} + \tilde{L}_1\epsilon + \tilde{L}_2\epsilon^2+...  $$.  
+- 当$$\epsilon=0$$时， $$\tilde{L_{0}} = L$$, 代入上式： <br/>
+ $$\tilde{L} - L = \tilde{L}_1\epsilon + \tilde{L}_2\epsilon^2+... $$ <br/>
+ 这里我们记： $$\delta L = \tilde{L}_1\epsilon = \frac{d\tilde{L}}{d\epsilon}|_{\epsilon=0}.\epsilon   $$ 为一阶变分， $$\delta L^2 = \tilde{L}_2\epsilon^2 为二阶变分 $$
 
 
