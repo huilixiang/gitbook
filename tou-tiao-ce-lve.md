@@ -52,7 +52,7 @@
 
 #### anti-cheat
 - anti_cheat_conf:
-   - ug_model
+   - ug_model, 使用4个特征， 老用钱宝/大额的订单申请/放款总次数
    - rule_model, 没有特征
    - outlier_model
    - scorecard_model
