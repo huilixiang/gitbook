@@ -51,4 +51,10 @@
 - amount_feature置0: fmap['1019991000'] = 0
 
 #### anti-cheat
+- anti_cheat_conf:
+   - ug_model
+   - rule_model, 没有特征
+   - outlier_model
+   - scorecard_model
+- 
  
