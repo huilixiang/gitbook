@@ -48,3 +48,7 @@
     
 - 特征选择文件： yqb_basic
 - 特征获取失败后重试： sp\_error,  feature\_1_error
+- amount_feature置0: fmap['1019991000'] = 0
+
+#### anti-cheat
+ 
