@@ -73,7 +73,7 @@
     - recall: 1021001004 > 0 , 用户在-老用钱宝-历史订单-用钱宝历史放款总次数
     - first: 1022001002 = 0 (用钱宝授信拒绝次数==0) and 1021001007 == 0 (老用钱宝拒绝总次数==0) and 1022801002 == 0 (member?)
     - 其它是again
-- first_baseline:
+- first_baseline1:
     - check_job
     - check_age
     - check_anticheat
@@ -86,5 +86,10 @@
     - check_white_knight_multiloan
     - check_tongdun_multiloan
     - check_xinyan_apply
+    
+- 只要不发生错误就流向下一节点
+
+#### decision1
+- 
     
  
