@@ -8,5 +8,6 @@
 
 #### FeatureCalculate1
 - 特征算子配置文件： TouTiaoCa  
-    - 
+    - ApplicationInfoFeature
+    
 - 特征选择文件： yqb_basic
