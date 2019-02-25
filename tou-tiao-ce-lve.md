@@ -56,5 +56,5 @@
    - rule_model, 没有特征
    - outlier_model, 特征较多，短信\applist等其它特征
    - scorecard_model， 没有特征
-- 
+- 获取各个模型分并标记反欺诈结果，但不决策。
  
