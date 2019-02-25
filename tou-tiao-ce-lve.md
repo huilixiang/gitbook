@@ -91,7 +91,7 @@
 
 #### decision1
 - 订单类型同baseline
-- first_shouxin
-    - 
+- first授信阶段
+    - 仅使用京东zrobot和冰鉴分决策
     
  
