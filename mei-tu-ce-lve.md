@@ -6,7 +6,8 @@
 - job != '学生'
 - YQBCASnapshot, product=800
 #### FeatureCalculate1
-- MeituCa  
+- MeituCa 
+ 
     "ApplicationInfoFeature",
     "DeviceCallsFeature",
     "SpFeature",
