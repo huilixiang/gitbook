@@ -72,3 +72,7 @@
 - check_shumei_overdue_blacklist
 - check_white_knight_multiloan
 - check_tongdun_multiloan
+
+#### Decision1_DN
+- user_type/first
+    - 
