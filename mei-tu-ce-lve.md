@@ -45,4 +45,5 @@
     "BingjianFeature",
     "ZrobotFeature"
     
-#### 
+#### AntiCheat
+- 获取anticheat的结果，但不决策
