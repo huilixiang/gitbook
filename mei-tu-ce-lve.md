@@ -8,8 +8,8 @@
 #### FeatureCalculate1
 - MeituCa 
  
- 特征算子列表
- 
+
+- yqb_basic  
     "ApplicationInfoFeature",
     "DeviceCallsFeature",
     "SpFeature",
@@ -42,5 +42,3 @@
     "XinyanBehaviorFeature",
     "BingjianFeature",
     "ZrobotFeature"
-- yqb_basic
-    
