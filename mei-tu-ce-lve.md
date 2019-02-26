@@ -54,6 +54,13 @@
 - yqb36_meitu_maat_main_v2, 可用特征列表feature_conf/yqb36_meitu_maat_main_v2.0.conf.json
 
 #### Baseline1_DN
-- order_type: 
+- order_type:   
     - 1021011004 > 0 美图-历史订单-历史放款总次数 regular
-    - 1021031002 == 0 美图-授信历史-授信拒绝次数 and 1022001002 == 0 #用钱宝36-授信历史-授信拒绝次数 and 1021011007 == 0 美图-历史订单-历史拒绝总次数
+    - 1021031002 == 0 美图-授信历史-授信拒绝次数 and 1022001002 == 0 #用钱宝36-授信历史-授信拒绝次数 and 1021011007 == 0 美图-历史订单-历史拒绝总次数   
+- check_job
+- check_age_range
+- check_is_not_phone
+- check_sp_name_ok
+- check_call_times_six_month
+- check_multi_idcard
+- 
