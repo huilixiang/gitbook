@@ -93,5 +93,7 @@
 - 订单类型同baseline
 - first授信阶段
     - 仅使用京东zrobot和冰鉴分决策
+    - zrobot_score > 670 or binjian_score > 670 and review['baseline_suggestion'] == 1: 5000额度
+    - zrobot_score > 670 and binjian_score > 670 and review['baseline_suggestion'] == 1: 8000额度
     
  
