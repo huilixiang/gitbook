@@ -77,4 +77,7 @@
 - user_type/first 
     - 授信1
     - yqb_first_normal_mt_dai_score > 820 or yqb36_meitu_maat_main_v2.0_dai_score > 650
-    - 
+    - 在授信2检查baseline
+    
+    - 订单1
+    - model_suggestion && baseline_suggestion , 3000
