@@ -63,4 +63,12 @@
 - check_sp_name_ok
 - check_call_times_six_month
 - check_multi_idcard
-- 
+- check_anticheat 
+- check_couple_on_loan
+- check_tongdun_black
+- check_court_blacklist_by_baidu
+- check_yqb_overdue
+- check_fqz_overdue
+- check_shumei_overdue_blacklist
+- check_white_knight_multiloan
+- check_tongdun_multiloan
