@@ -96,4 +96,6 @@
     - zrobot_score > 670 or binjian_score > 670 and review['baseline_suggestion'] == 1: 5000额度
     - zrobot_score > 670 and binjian_score > 670 and review['baseline_suggestion'] == 1: 8000额度
     
+#### 当前头条和美图没有face_task节点， 需要开发
+    
  
