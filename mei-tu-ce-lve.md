@@ -50,4 +50,4 @@
 #### ModelScore
 - yqb_first_normal_mt
 
-- yqb36_meitu_maat_main_v2
+- yqb36_meitu_maat_main_v2, 可用特征列表feature_conf/yqb36_meitu_maat_main_v2.0.conf.json
