@@ -87,4 +87,4 @@
 - yqb_cheap
 
 #### baseline2
-- check_xinyan_apply
+- check_xinyan_apply  loan_overdue_num_thresh=0
