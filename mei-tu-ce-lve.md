@@ -75,4 +75,4 @@
 
 #### Decision1_DN
 - user_type/first
-    - yqb_first_normal_mt_dai_score > 820 or yqb_first_normal_mt_dai_score > 650
+    - yqb_first_normal_mt_dai_score > 820 or yqb36_meitu_maat_main_v2.0_dai_score > 650
