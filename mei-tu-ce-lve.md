@@ -47,4 +47,7 @@
     
 #### AntiCheat
 - 获取anticheat的结果，但不决策  
-- 
+#### ModelScore
+- yqb_first_normal_mt
+
+- yqb36_meitu_maat_main_v2
