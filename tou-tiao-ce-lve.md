@@ -89,7 +89,7 @@
     
 - 只要不发生错误就流向下一节点
 
-#### decision1
+#### decision1 结束node
 - 订单类型同baseline
 - first授信阶段
     - 仅使用京东zrobot和冰鉴分决策
