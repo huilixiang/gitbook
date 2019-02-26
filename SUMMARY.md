@@ -41,4 +41,5 @@
 * [python备忘](pythonbei-wang.md)
 * [R360金额差异化](r360jin-e-cha-yi-hua.md)
 * [头条策略](tou-tiao-ce-lve.md)
+* [美图策略](mei-tu-ce-lve.md)
 
