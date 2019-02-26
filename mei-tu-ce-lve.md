@@ -89,4 +89,5 @@
 #### baseline2
 - check_xinyan_apply  loan_overdue_num_thresh=0
 
-#### 
+#### Decision2_dn
+- 没有人脸节点
