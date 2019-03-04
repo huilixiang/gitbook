@@ -11,7 +11,6 @@
  
 
 - yqb_basic  
-
     "ApplicationInfoFeature",
     "DeviceCallsFeature",
     "SpFeature",
