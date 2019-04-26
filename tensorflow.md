@@ -32,4 +32,5 @@
 - 从图的源节点开始，遍历图，对于每个节点都使用贪心算法找一个可能的节点。 筛选逻辑： 支持当前操作， 执行时间、与该节点交互消耗的时间
 
 #### cross-device communication
-- node placement被计算后， 整个图会被分成若干个小图，每个设备上一个小图。跨设备的x-->y的边会被删除，代之的是x到新的send node的边和， 一个recv的node到Y的边。
+- node placement被计算后， 整个图会被分成若干个小图，每个设备上一个小图。跨设备的x-->y的边会被删除，代之的是x到新的send node的边和， 一个recv的node到Y的边。 在运行期间， 由send node 和recv node来协调传输从x->y的数据。
+- 这样做的好处： 减少数据传输次数、内存占用。 同时可以去中心化， 将worker与device之间的同步工作拆解开来， 由send-recv自主协调， 使得master不需要做此类工作
