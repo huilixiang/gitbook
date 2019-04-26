@@ -10,4 +10,4 @@
 - kernel 是具体计算的实现。
 
 #### sessions
-- 
+- client通过session与TF 进行系统交互。
