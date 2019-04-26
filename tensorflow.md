@@ -15,3 +15,6 @@
 #### variables
 - 在图中， 许多计算被执行很多次。 tensor只存活于一次计算。
 - 变量是一种特殊的操作， 可以返回handle来持久化需要跨多次执行的tensor
+- 模型的参数一般都被保存在由variable控制的tensor中。
+
+
