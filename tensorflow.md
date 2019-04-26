@@ -11,3 +11,7 @@
 
 #### sessions
 - client通过session与TF 进行系统交互。
+
+#### variables
+- 在图中， 许多计算被执行很多次。 tensor只存活于一次计算。
+- 变量是一种特殊的操作， 可以返回handle来持久化需要跨多次执行的tensor
