@@ -19,6 +19,7 @@
   * [gradient booting machine](LML/gradient-booting-machine.md)
   * [factorization machine](LML/factorization-machine.md)
   * [概率统计](gai-lv-tong-ji.md)
+  * [tensorflow](tensorflow.md)
   * [变分](LML/bian-fen.md)
   * [互金](LML/hu-jin.md)
   * [lightGBM](LML/lightgbm.md)
@@ -31,6 +32,7 @@
   * [word representations in vector space](LML/word-representations-in-vector-space.md)
   * [boosting for transfer learning](LML/boosting-for-transfer-learning.md)
   * [domain adaption via transfer component analysis](LML/domain-adaption-via-transfer-component-analysis.md)
+* [tensorflow](tensorflow.md)
 * [ML分享](MLP/README.md)
   * [线性模型](MLP/linear_model.md)
   * [从VC维到SVM](MLP/cong-vc-wei-dao-svm.md)
@@ -40,6 +42,5 @@
 * [R360金额差异化](r360jin-e-cha-yi-hua.md)
 * [python备忘](pythonbei-wang.md)
 * [R360金额差异化](r360jin-e-cha-yi-hua.md)
-* [头条策略](tou-tiao-ce-lve.md)
-* [美图策略](mei-tu-ce-lve.md)
+* [tensorflow](tensorflow.md)
 
