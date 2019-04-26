@@ -17,4 +17,10 @@
 - 变量是一种特殊的操作， 可以返回handle来持久化需要跨多次执行的tensor
 - 模型的参数一般都被保存在由variable控制的tensor中。
 
-
+### 实现
+#### client
+- client是TFS 中主要的组件， 通过session与master、多个工作进程交互。
+#### devices
+- devices是TF的计算核心。
+#### tensor
+- 是一个有类型的、多维数组。
