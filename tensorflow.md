@@ -24,3 +24,6 @@
 - devices是TF的计算核心。
 #### tensor
 - 是一个有类型的、多维数组。
+
+### node placement
+- 
