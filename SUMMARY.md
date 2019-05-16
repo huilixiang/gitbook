@@ -25,6 +25,7 @@
   * [lightGBM](LML/lightgbm.md)
   * [模型评估](LML/mo-xing-ping-gu.md)
   * [evaluating machine learning models](LML/evaluating-machine-learning-models.md)
+  * [激活函数](LML/ji-huo-han-shu.md)
   * [sparse coding](LML/sparse-coding.md)
   * [deep sparse rectifier neural networks](LML/deep-sparse-rectifier-neural-networks.md)
   * [deep belief nets](LML/deep-belief-networks.md)
