@@ -6,4 +6,4 @@
 #### 激活函数类别介绍
 - sigmoid. $$\frac{1}{1+e^{-z}}$$  取值范围(0,1), 可以做二分类。 求导涉及除法， 计算量大。容易出现梯度消失。在两端梯度趋近0
 - tanh: $$\frac{e^z-e^{-z}}{e^z+e^{-z}}$$ $$tanh(z) = 2*sigmoid(2x) - 1$$ . [-1, 1] , 0均值。在实际中表现好。
-- ReLU, rectified linear unit. 修正线性单元。 $$max(0, x)$$
+- ReLU, rectified linear unit. 修正线性单元。 $$max(0, x)$$. 收敛速度快。 但容易死亡
