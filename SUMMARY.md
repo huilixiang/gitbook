@@ -22,6 +22,7 @@
   * [tensorflow](tensorflow.md)
   * [变分](LML/bian-fen.md)
   * [互金](LML/hu-jin.md)
+  * [word embedding](LML/word-embedding.md)
   * [lightGBM](LML/lightgbm.md)
   * [模型评估](LML/mo-xing-ping-gu.md)
   * [evaluating machine learning models](LML/evaluating-machine-learning-models.md)
