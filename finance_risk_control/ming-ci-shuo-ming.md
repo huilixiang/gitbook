@@ -77,3 +77,4 @@ P2P是英文peer to peer lending（或peer-to-peer）的缩写，意即个人对
 ### IRR 与 APR
 APR：Annual Percentage Rate。 当计算周期小于一年的时候，存在复利， 收益会多一点。 计算公式：n为计息周期。 (1+利率/n）^n 年度百分率。 
 
+
