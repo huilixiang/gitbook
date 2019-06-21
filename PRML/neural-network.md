@@ -20,3 +20,4 @@ $$a_j = \sum_{i=1}^{D}w_{ji}x_i + w_{j0}$$
 $$a_j$$ 被称为activation, 激活
 $$w_{ji}$$被称为weight, 权重
 $$w_{j0}$$被称为bias, 偏置
+每个
