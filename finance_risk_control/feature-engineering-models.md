@@ -6,7 +6,11 @@
 - 在每个点的停留时长， 以及session中的占比
 - 在每个点的编辑次数 
 
-####  
+#### 子模型
+- 短信 tfidf, top-frequency
+- applist, one-hot, top-frequency
+- 短信的另外一种用法，  先用其它特征训练模型， 然后以最终的预测值作为新的boosting的初始值， 再单个term的boosting.
+#### 
 
 
 ## 模型工程
