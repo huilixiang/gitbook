@@ -9,7 +9,7 @@ $$\large lnP(x) = \large lnP(x,z) - lnP(z|x)$$
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$\large=lnP(x,z) - lnQ(z) - ln\frac{P(z|x)}{Q(z)}$$
 两边取期望
 $$\large \int_zlnP(x)Q(z)dz = lnP(x)$$
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$= \underbrace{\large \int_zlnP(x,z)Q(z)dz - \int_zQ(z)Q(z)dz}_{L(Q) - Evidence lower bound} \underbrace{ - \int_zln\frac{P(z|x)}{Q(z)}Q(z)dz }_{KL}$$
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$= \underbrace{\large \int_zlnP(x,z)Q(z)dz - \int_zlnQ(z)Q(z)dz}_{L(Q) - Evidence lower bound} \underbrace{ - \int_zln\frac{P(z|x)}{Q(z)}Q(z)dz }_{KL}$$
 
 至此， KL >= 0 , 所以当KL=0的时候， Q分布与P一致，　但现实中我们不知道P，　所以KL=0不能利用。转而向ELOB。
 
@@ -18,7 +18,7 @@ $$lnP(x) = \large ln\int_zP(x,z)dz = ln\int_z\frac{P(x,z)}{Q(z)}Q(z)dz = ln E_{Q
 
 jensen不等式， 对于凸函数$$\phi(x)$$
 $$\phi(E[x]) \leq E[\phi(x)]$$ , 凹函数相反。ln是凹函数， 故接上面公式：
-$$\large \geq E_Q[ln\frac{P(x,z)}{Q(z)}] =  $$ 
+$$\large \geq E_Q[ln\frac{P(x,z)}{Q(z)}] = E_Q[lnP(x,z)] - E_Q[lnQ(z)] $$ 
 
 
 
