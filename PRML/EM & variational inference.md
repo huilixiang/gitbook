@@ -7,6 +7,7 @@ $$\large p(z|x) = \Large \frac{p(x,z)}{p(x)}$$
 $$\large lnP(x) = \large lnP(x,z) - lnP(z|x)$$
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$\large=ln\frac{P(x,z)}{Q(z)} - ln\frac{P(z|x)}{Q(z)}$$
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$\large=lnP(x,z) - lnQ(z) - ln\frac{P(z|x)}{Q(z)}$$
-两边
+两边取期望
+$$\Large \int$$
 
 
