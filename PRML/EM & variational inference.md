@@ -17,7 +17,8 @@ $$\large \int_zlnP(x)Q(z)dz = lnP(x)$$
 $$lnP(x) = \large ln\int_zP(x,z)dz = ln\int_z\frac{P(x,z)}{Q(z)}Q(z)dz = ln E_{Q}[\frac{P(x,z)}{Q(z)}]$$
 
 jensen不等式， 对于凸函数$$\phi(x)$$
-$$\phi(E[x]) \leq E[\phi(x)]$$ 
+$$\phi(E[x]) \leq E[\phi(x)]$$ , 凹函数相反。ln是凹函数， 故接上面公式：
+$$\large \geq E_Q[ln\frac{P(x,z)}{Q(z)}] $$ 
 
 
 
