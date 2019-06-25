@@ -14,7 +14,10 @@ $$\large \int_zlnP(x)Q(z)dz = lnP(x)$$
 至此， KL >= 0 , 所以当KL=0的时候， Q分布与P一致，　但现实中我们不知道P，　所以KL=0不能利用。转而向ELOB。
 
 #### ELOB的上界
+$$lnP(x) = \large ln\int_zP(x,z)dz = ln\int_z\frac{P(x,z)}{Q(z)}Q(z)dz = ln E_{Q}[\frac{P(x,z)}{Q(z)}]$$
 
+jensen不等式， 对于凸函数$$\phi(x)$$
+$$\phi(E(x)) <= E(\phi(x))$$ 
 
 
 
