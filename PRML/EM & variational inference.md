@@ -28,6 +28,7 @@ $$Q(z) = \prod_i Q_i(z_i)$$
 
 $$\large L(Q) = \int_zlnP(x,z)Q(z)dz - \int_zlnQ(z)Q(z)dz$$
 $$\large =\int \prod_i Q_i(z_i)lnP(x,z)dz - \int \prod_i Q_i(z_i) \sum lnQ_i(z_i)dz $$
+$$\large $$
 
 
 
