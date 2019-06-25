@@ -29,7 +29,8 @@ $$Q(z) = \prod_i Q_i(z_i)$$
 $$\large L(Q) = \int_zlnP(x,z)Q(z)dz - \int_zlnQ(z)Q(z)dz$$
 $$\large =\int \prod_i Q_i(z_i)lnP(x,z)dz - \int \prod_i Q_i(z_i) \sum lnQ_i(z_i)dz $$
 $$\large = \int_{z_j}Q_j(z_j)(E_{i \ne j}[lnP(x,z)])dz_j - \int_j Q_j(z_j)lnQ_j(z_j)dz_j + const$$
-令$$ln\overline{P}(x,z) = E_{i \ne j}[lnP(x,z)] $$
+令$$ln\overline{P_j}(x,z_j) = E_{i \ne j}[lnP(x,z)] $$ 
+$$ = \int_{z_j} Q_j(z_j)ln\frac{\overline{P}(x,z)}{Q_j(z_j)}$$
 
 
 
