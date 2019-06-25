@@ -2,4 +2,4 @@
 ### 推导过程
 #### 贝叶斯公式
 $$\large p(z|x) = \Large \frac{p(x,z)}{p(x)}$$ 
-则
+则 $$\large p(x)=\Large \frac{p(x,z)}{p(z|x)}$$
