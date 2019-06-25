@@ -38,7 +38,7 @@ $$\large lnQ_2^*(z_2) = \int_{Q_1}\int_{Q_3}\cdot\cdot\cdot\int_{Q_n}lnP(x,z)Q_1
 $$\cdot$$
 $$\cdot$$
 $$\cdot$$
-$$\large lnQ_n^*(z_n) = \int_{Q_1}\int_{Q_2}\cdot\cdot\cdot\int_{Q_{n-1}lnP(x,z)Q_2(z_2)\cdot\cdot\cdot Q_n(z_n)dz_2dz_3\cdot\cdot\cdot d_zn$$
+$$\large lnQ_n^*(z_n) = \int_{Q_1}\int_{Q_2}\cdot\cdot\cdot\int_{Q_{n-1}}lnP(x,z)Q_2(z_2)\cdot\cdot\cdot Q_n(z_n)dz_2dz_3\cdot\cdot\cdot d_zn$$
 
 
 
