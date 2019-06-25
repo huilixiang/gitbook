@@ -27,7 +27,7 @@ $$\large \geq E_Q[ln\frac{P(x,z)}{Q(z)}] = \underbrace{E_Q[lnP(x,z)] - E_Q[lnQ(z
 $$Q(z) = \prod_i Q_i(z_i)$$  
 
 $$\large L(Q) = \int_zlnP(x,z)Q(z)dz - \int_zlnQ(z)Q(z)dz$$
-$$\large =\int \prod_i Q_i(z)lnP(x,z)dz - \int \prod_i Q_i(z) \sum lnQ_i(z_i)dz $$
+$$\large =\int \prod_i Q_i(z_i)lnP(x,z)dz - \int \prod_i Q_i(z_i) \sum lnQ_i(z_i)dz $$
 
 
 
