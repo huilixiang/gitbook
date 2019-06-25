@@ -26,7 +26,8 @@ $$\large \geq E_Q[ln\frac{P(x,z)}{Q(z)}] = \underbrace{E_Q[lnP(x,z)] - E_Q[lnQ(z
 平均场假设复杂的多变量Z可拆分为一系列相互独立的多变量Zi，i=1,⋯,M，且q分布可以因子化为这些多变量集的乘积：
 $$Q(z) = \prod_i Q_i(z_i)$$  
 
-$$\large L(Q) = $$
+$$\large L(Q) = \int_zlnP(x,z)Q(z)dz - \int_zlnQ(z)Q(z)dz$$
+$$\large =\int \prod_i Q_i(z)lnP(x,z)dz - \int \prod_i Q_i(z) \sum lnQ_i(z_i)dz $$
 
 
 
