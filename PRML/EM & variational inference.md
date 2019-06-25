@@ -32,6 +32,8 @@ $$\large = \int_{z_j}Q_j(z_j)(E_{i \ne j}[lnP(x,z)])dz_j - \int_j Q_j(z_j)lnQ_j(
 令$$ln\overline{P_j}(x,z_j) = E_{i \ne j}[lnP(x,z)] $$ 
 $$ = \int_{z_j} Q_j(z_j)ln\frac{\overline{P_j}(x,z_j)}{Q_j(z_j)} + const \rightarrow -KL(E_{i \ne j}[lnP(x,z)] || lnQ_j(z_j)) $$ ELOB也是一个KL， 且最大值是0.
 
+最后
+
 
 
 
