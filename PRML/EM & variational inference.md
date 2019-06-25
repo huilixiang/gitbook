@@ -20,7 +20,7 @@ jensen不等式， 对于凸函数$$\phi(x)$$
 $$\phi(E[x]) \leq E[\phi(x)]$$ , 凹函数相反。ln是凹函数， 故接上面公式：
 $$\large \geq E_Q[ln\frac{P(x,z)}{Q(z)}] = \underbrace{E_Q[lnP(x,z)] - E_Q[lnQ(z)]}_{ELOB} $$ 
 
-让
+让ELOB接近其上限
 
 
 
