@@ -11,4 +11,6 @@ $$\large lnP(x) = \large lnP(x,z) - lnP(z|x)$$
 $$\large \int_zlnP(x)Q(z)dz = lnP(x)$$
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$= \underbrace{\large \int_zlnP(x,z)Q(z)dz - \int_zQ(z)Q(z)dz}_{L(Q) - Evidence lower bound} \underbrace{ - \int_zln\frac{P(z|x)}{Q(z)}Q(z)dz }_{KL}$$
 
+至此
+
 
