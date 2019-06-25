@@ -40,6 +40,8 @@ $$\cdot$$
 $$\cdot$$
 $$\large lnQ_n^*(z_n) = \int_{Q_1}\int_{Q_2}\cdot\cdot\cdot\int_{Q_{n-1}}lnP(x,z)Q_2(z_2)\cdot\cdot\cdot Q_{n-1}(z_{n-1})dz_2dz_3\cdot\cdot\cdot dz_{n-1}$$
 
+依次
+
 
 
 
