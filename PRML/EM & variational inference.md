@@ -9,6 +9,6 @@ $$\large lnP(x) = \large lnP(x,z) - lnP(z|x)$$
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$\large=lnP(x,z) - lnQ(z) - ln\frac{P(z|x)}{Q(z)}$$
 两边取期望
 $$\large \int_zlnP(x)Q(z)dz = lnP(x)$$
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$=$$
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$$= \large \int_zlnP(x,z)Q(z)dz - \int_zQ(z)Q(z)dz - \int_zln\frac{P(z|x)}{Q(z)}Q(z)dz$$
 
 
