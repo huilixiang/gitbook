@@ -23,3 +23,4 @@ $$\large \geq E_Q[ln\frac{P(x,z)}{Q(z)}] = \underbrace{E_Q[lnP(x,z)] - E_Q[lnQ(z
 
 
 
+
