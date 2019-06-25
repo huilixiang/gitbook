@@ -34,6 +34,20 @@ $$ = \int_{z_j} Q_j(z_j)ln\frac{\overline{P_j}(x,z_j)}{Q_j(z_j)} + const \righta
 
 最后介绍如何获得稳定lnQ的迭代步骤：
 $$\large lnQ_1^*(z_1) = \int_{Q_2}\int_{Q_3}\cdot\cdot\cdot\int_{Q_n}lnP(x,z)Q_2(z_2)\cdot\cdot\cdot Q_n(z_n)dz_2dz_3\cdot\cdot\cdot d_zn$$
+$$\large lnQ_2^*(z_2) = \int_{Q_1}\int_{Q_3}\cdot\cdot\cdot\int_{Q_n}lnP(x,z)Q_1(z_1)\cdot\cdot\cdot Q_n(z_n)dz_1dz_3\cdot\cdot\cdot d_zn$$
+$$\cdot$$
+$$\cdot$$
+$$\cdot$$
+$$\large lnQ_n^*(z_n) = \int_{Q_1}\int_{Q_2}\cdot\cdot\cdot\int_{Q_{n-1}lnP(x,z)Q_2(z_2)\cdot\cdot\cdot Q_n(z_n)dz_2dz_3\cdot\cdot\cdot d_zn$$
+
+
+
+
+
+
+
+
+
 
 
 
