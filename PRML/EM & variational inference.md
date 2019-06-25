@@ -13,6 +13,9 @@ $$\large \int_zlnP(x)Q(z)dz = lnP(x)$$
 
 至此， KL >= 0 , 所以当KL=0的时候， Q分布与P一致，　但现实中我们不知道P，　所以KL=0不能利用。转而向ELOB。
 
+#### ELOB的上界
+
+
 
 
 
