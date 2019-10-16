@@ -12,4 +12,4 @@
 - 结合刚才的例子， feature_values: 50平， 2楼， park-nearby, cat-banned.
 - gain: 30w - 31w = -1w. 这也是我们要解释的原因。
 
-#### 如何计算一个特征值的Shaply value
+#### 如何计算一个特征值的Shapley value
