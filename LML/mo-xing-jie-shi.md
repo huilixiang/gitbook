@@ -13,3 +13,5 @@
 - gain: 30w - 31w = -1w. 这也是我们要解释的原因。
 
 #### 如何计算一个特征值的Shapley value
+- Shapley value = average marginal contribution of a feature value across all possible coalitions.
+- 
