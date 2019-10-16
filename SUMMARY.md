@@ -34,6 +34,7 @@
   * [word representations in vector space](LML/word-representations-in-vector-space.md)
   * [boosting for transfer learning](LML/boosting-for-transfer-learning.md)
   * [domain adaption via transfer component analysis](LML/domain-adaption-via-transfer-component-analysis.md)
+  * [模型解释](LML/mo-xing-jie-shi.md)
 * [tensorflow](tensorflow.md)
 * [ML分享](MLP/README.md)
   * [线性模型](MLP/linear_model.md)
