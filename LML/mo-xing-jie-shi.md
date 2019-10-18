@@ -23,5 +23,27 @@
 ## Local Interpretable Model-agnostic Explanations. 
 ### 摘要
 机器学习模型尽管被广泛应用， 但仍然被当作一个黑箱来看待。“信任”一个模型， 是基于一个模型的预估做出决策的基础。
-LIME
+LIME， 通过学习一个局部的可解释的模型， 可以实现对任意分类给出可解释的、值得依赖的解释。
+
+### 简介
+- 如果用户不相应模型或者它的预测， 那么就不会使用它。
+- 区别两个两者的不同是相当重要的：
+    1. trusting a prediction.   decision making. 
+    2. trusting a model .  模型会在可用验证集上有一个准确度的评估。然后， real-world data往往有很大的不同。 甚至， 评估指标不能反应产品的目标。 因此，关注个体的预测值和相应的解释， 就变得相当重要 。 在大数据集上， 引导用户关注哪些instances, 也是相当重要。
+
+- LIME。 一个可解释所有分类型或回归模型的局部近似算法
+- SP-LIME。  可筛选一批具有代表性的解释实例， 来表明模型的可信任性。
+- 
+
+### the case for explanations
+- data leakage. 向训练集泄漏了某些信息。比如病人Id
+- data shift. 训练集与测试集差异较大
+
+### desired characteristics for explainers.
+- intepretable.  变量与输出之间的定性理解。 需要根据受众有所不同。 与输入的特征维数有区别
+- local fidelity. 在被预测的实例的小范围内， 必须与模型有高于的一致性。
+- model-agnostic.  模型无关
+- global perspecitve
+
+### 
  
