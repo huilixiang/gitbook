@@ -55,5 +55,7 @@ fidelity - interpretability trade-off
 最终的公式:
 <font size='15'> $$\xi(x) = argmin_{p \in G} L(f, g, \pi_x) + \Omega(g)$$ </font>
 
+### sampling for local Exploration
+- 在x周围进行非0均匀采样。
 
  
