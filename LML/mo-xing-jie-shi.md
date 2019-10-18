@@ -53,6 +53,6 @@ fidelity - interpretability trade-off
 近似度度量：$$\pi_x(z) ， z是x$$的局部近似值
 不可信程度度量: $$L(f, g, \pi_x)$$ , 且 $$\Omega(g)$$足够小。
 最终的公式:
-<font size='10'> $$\xi(x) = argmin_{p \in G} L(f, g, \pi_x) + \Omega(g)$$ </font>
+<font size='12'> $$\xi(x) = argmin_{p \in G} L(f, g, \pi_x) + \Omega(g)$$ </font>
 
  
