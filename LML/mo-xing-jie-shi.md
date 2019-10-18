@@ -47,5 +47,7 @@ LIME， 通过学习一个局部的可解释的模型， 可以实现对任意�
 
 ### LIME
 fidelity - interpretability trade-off   
-$$f: $$
+要解释的模型： $$f: R^d \rightarrow R $$ 
+解释模型: $$g \in G ， G$$是所有可能的解释模型集合
+复杂 
  
