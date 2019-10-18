@@ -46,6 +46,6 @@ LIME， 通过学习一个局部的可解释的模型， 可以实现对任意�
 - global perspecitve
 
 ### LIME
-- fidelity - interpretability trade-off  
+fidelity - interpretability trade-off   
 $$f: $$
  
