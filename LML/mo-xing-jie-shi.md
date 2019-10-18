@@ -1,4 +1,4 @@
-## 模型解释
+ ## 模型解释
 ## Shapley Values
  一个样本的特征值可以看作是游戏中的 “玩家”， 而预测值则是"付出的筹码"。 来自于博弈论。
 ### 思路
@@ -53,6 +53,6 @@ fidelity - interpretability trade-off
 近似度度量：$$\pi_x(z) ， z是x$$的局部近似值
 不可信程度度量: $$L(f, g, \pi_x)$$ , 且 $$\Omega(g)$$足够小。
 最终的公式:
-$$\xi(x) = argmin_{p \in G} L(f, g, \pi_x) + \Omega(g)$$
+$$\xi(x) = \underset{1}{123} argmin_{p \in G} L(f, g, \pi_x) + \Omega(g)$$
 
  
