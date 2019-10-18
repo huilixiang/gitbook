@@ -50,6 +50,7 @@ fidelity - interpretability trade-off
 要解释的模型： $$f: R^d \rightarrow R， f(x) $$是预测值。 
 解释模型: $$g \in G ， G$$是所有可能的解释模型集合
 解释模型复杂度: $$\Omega(g)$$
-近似 
+近似度测量：$$\pi_x(z) ， z是x$$的局部近似值
+不 
 
  
