@@ -22,5 +22,6 @@
 
 ## Local Interpretable Model-agnostic Explanations. 
 ### 摘要
-机器
+机器学习模型尽管被广泛应用， 但仍然被当作一个黑箱来看待。“信任”一个模型， 是基于一个模型的预估做出决策的基础。
+LIME
  
