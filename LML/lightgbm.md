@@ -55,3 +55,15 @@
     1. 按nonzero value个数排序。 
     2.  
 
+
+
+
+## LightGBM源码分析
+### init阶段
+- network init
+- boost.reset
+- objective_fun_reset
+- load_data
+- objective_fun_init
+- boosting init
+- boosting addValidData
