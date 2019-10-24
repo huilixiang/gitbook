@@ -100,9 +100,12 @@
         - 计算: is_pos, label(先判断is_pos, 然后从label_val_中取出对应的标识-1 or 1), label_weight.
         - 计算response: -label * sigmoid_ / (1.0f + std::exp(label * sigmoid_ * score[i]))
         - 计算abs_response = fabs(response)
+        - gradients: response * label_weight  
+        - hessians: (abs_response * (sigmoid_ - abs_response) * label_weight )
+- else
         - gradients: response * label_weight  * weights_[i]
         - hessians: (abs_response * (sigmoid_ - abs_response) * label_weight * weights_[i])
-- else
+
 
 
 
