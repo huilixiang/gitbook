@@ -108,7 +108,7 @@
 
 
 ##### BoostFromScore(int)
-- suml = sum(is_pos_[label_[i]] * weights_[i])  ##
+- suml = sum(is_pos_[label_[i]] * weights_[i])  #
 - sumw = sum(weights_[i])
 - 
 
