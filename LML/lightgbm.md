@@ -69,7 +69,19 @@
 - boosting addValidData
 
 ### boosting
-- 
+ 
 ### objective
+- GetGradients. 根据score, 计算gradients & hessians
+
+#### BinaryLogloss
+##### 构造函数
+- sigmoid_ 参数， sigmod function 的参数。 仅使用于binary, multiclassova, lambdarank
+- is_unbalance,  仅适用于binary & multiclassova, 如何训练集是unbalanced, 可以使用此参数。 可以提升模型的整体效果， 但可能导致较差的单个样本估计。 与参数： scale_pos_weight不能同时使用。
+- scale_pos_weight. 正样本标签的权重。与is_unbalance类似
+- is_pos_ : 是否是正样本。 默认 >0 即为正样本。
+
+##### init(MetaData, num_data)
+- MetaData 存储训练数据的元数据（非特征）。 例如： labels、 weights、initial scores(model will boost from, not 0)、query level informations(for lambdarank).
+
 
 ### treelearner
