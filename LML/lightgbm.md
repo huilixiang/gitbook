@@ -81,7 +81,26 @@
 - is_pos_ : 是否是正样本。 默认 >0 即为正样本。
 
 ##### init(MetaData, num_data)
-- MetaData 存储训练数据的元数据（非特征）。 例如： labels、 weights、initial scores(model will boost from, not 0)、query level informations(for lambdarank).
+- MetaData 存储训练数据的元数据（非特征）。 例如： labels、 weights、initial scores(model will boost from, otherwise 0)、query level informations(for lambdarank).
+- lebel_
+- weights_
+- 正、负样本个数
+- 如果是分布式环境，会同步计算正负样本总合
+- 如果只有正样本 or 负样本， 则不需要训练
+- 默认：正样本1, 负样本-1
+- 如果is_unbalance == True,   如果正样本数量 > 负样本数量 则 正样本标签的权重=1, 负样本标签的权重= 正样本数量/负样本数量。 负责相反。
+- scale_pos_weight 
+
+##### ConvertOutput
+- return 1.0f / (1.0f + std::exp(-sigmoid_ * input[0])). 默认sigmoid_ = 1.0
+
+##### GetGradients(const double* score, score_t* gradients, score_t* hessians)
+- if(weights_ == nullptr): #pragma omp parallel for schedule .  
+        - 遍历每一个data
+        - 计算: is_pos, label(先判断is_pos, 然后从label_val_中取出对应的标识-1 or 1), label_weight.
+        -  
+- else
+
 
 
 ### treelearner
