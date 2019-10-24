@@ -107,6 +107,8 @@
         - hessians: (abs_response * (sigmoid_ - abs_response) * label_weight * weights_[i])
 
 
+##### BoostFromScore(int)
+- 
 
 
 ### treelearner
