@@ -116,4 +116,11 @@
 ### treelearner
 #### serial_tree_learner.cpp
 - init
-    - 
+    - num_data_ 数据集大小
+    - num_features_ 特征数量
+    - max_case_size. 如果config.histogram_pool_size <=0 则为num_leaves, 否则 total_histogram_size = sum(所有特征对应的bin数量  * sizeof(HistogramBinEntry)）。 max_cache_size = config.histogram_pool_size * 1024 * 1024 / total_histogram_size
+
+- train
+    - force split的逻辑： forcedsplits_filename 可以指定每棵树首先使用的分裂特征以及分裂点， 在best_first learning之前。
+    - BeforeFineBestSplit
+    - ConstructHistograms 如何构建直方图。
