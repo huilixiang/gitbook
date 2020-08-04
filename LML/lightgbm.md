@@ -61,7 +61,18 @@
 ## LightGBM源码分析
 ### 执行流程  
 - application.h --> Run()--> InitTrain() --> Train()
-    - init     
+    - InitTrain  
+        - init-network
+        - creat boosting:  GBDT \ DART \ GOSS \ RF
+        - creat objective function: regression(L2, L1), quantile, huber, binary, poisson, lambdarank..
+        - LoadData： 
+              - predict_fun: boosting.get()
+              - 加载数据
+              - 添加training_metric 
+        - objective_fun.init()以binarylogloss为例：
+            -  做is_unbalance处理。  正样本量 > 负样本量， 则增加负样本权重：label_weight_[0] = 正样本数 / 负样本数。 否则：增加  正样本权重
+        -
+    - Train     
      
 ### init阶段
 - network init
