@@ -59,6 +59,10 @@
 
 
 ## LightGBM源码分析
+### 执行流程  
+- application.h --> Run()--> InitTrain() --> Train()
+    - init     
+     
 ### init阶段
 - network init
 - boost.reset
@@ -124,3 +128,4 @@
     - force split的逻辑： forcedsplits_filename 可以指定每棵树首先使用的分裂特征以及分裂点， 在best_first learning之前。
     - BeforeFineBestSplit
     - ConstructHistograms 如何构建直方图。
+    
