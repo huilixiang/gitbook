@@ -22,6 +22,7 @@
   * [tensorflow](tensorflow.md)
   * [变分](LML/bian-fen.md)
   * [互金](LML/hu-jin.md)
+    * [互金策略](LML/hu-jin/hu-jin-ce-lve.md)
   * [word embedding](LML/word-embedding.md)
   * [lightGBM](LML/lightgbm.md)
   * [模型评估](LML/mo-xing-ping-gu.md)
@@ -46,6 +47,4 @@
   * [额度策略](routine/aa.md)
 * [R360金额差异化](r360jin-e-cha-yi-hua.md)
 * [python备忘](pythonbei-wang.md)
-* [R360金额差异化](r360jin-e-cha-yi-hua.md)
-* [tensorflow](tensorflow.md)
 
